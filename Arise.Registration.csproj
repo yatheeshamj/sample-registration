@@ -1,0 +1,961 @@
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7236995A-7634-40F0-BAB0-07FE3E6A57A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>spotify.Registration</RootNamespace>
+    <AssemblyName>spotify.Registration</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include="spotify.PortalWidget\config-overrides.js" />
+    <Content Include="spotify.PortalWidget\public\favicon.ico" />
+    <Content Include="spotify.PortalWidget\public\index.html" />
+    <Content Include="spotify.PortalWidget\src\actions\agentProfile.js" />
+    <Content Include="spotify.PortalWidget\src\actions\auth.js" />
+    <Content Include="spotify.PortalWidget\src\actions\opportunitiesWidget.js" />
+    <Content Include="spotify.PortalWidget\src\actionTypes\agentProfile.js" />
+    <Content Include="spotify.PortalWidget\src\actionTypes\auth.js" />
+    <Content Include="spotify.PortalWidget\src\actionTypes\opportunitiesWidget.js" />
+    <Content Include="spotify.PortalWidget\src\assets\images\165x60.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\350x200.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\spotify-logo.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\spotify-logo.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\calendar-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\canada-flag-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\chatroom.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\check-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\checkbox-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Crowd Hub.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Crowd-Hub.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Crowd-Hub.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\crowdhub.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\happy-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\headphone-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\headset.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\help.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\info-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\info.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\knowledgezone.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\ondemand.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\openstar.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\privacy-off-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\privacy-on-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Schedule.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\schedule.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\servicingintervals.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\star.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Torch_Option-2.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Torch_Option-2_Preview.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\uk-flag-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\us-flag-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\video-icon.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Virtual_Classroom.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\Virtual_Classroom_Preview.png" />
+    <Content Include="spotify.PortalWidget\src\assets\images\warning-red.svg" />
+    <Content Include="spotify.PortalWidget\src\assets\images\x.svg" />
+    <Content Include="spotify.PortalWidget\src\components\App.js" />
+    <Content Include="spotify.PortalWidget\src\components\OpportunitiesWidget\index.js" />
+    <Content Include="spotify.PortalWidget\src\config.js" />
+    <Content Include="spotify.PortalWidget\src\index.js" />
+    <Content Include="spotify.PortalWidget\src\reducers\agentProfile.js" />
+    <Content Include="spotify.PortalWidget\src\reducers\auth.js" />
+    <Content Include="spotify.PortalWidget\src\reducers\index.js" />
+    <Content Include="spotify.PortalWidget\src\reducers\opportunitiesWidget.js" />
+    <Content Include="spotify.PortalWidget\src\sagas\auth.js" />
+    <Content Include="spotify.PortalWidget\src\sagas\index.js" />
+    <Content Include="spotify.PortalWidget\src\sagas\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
+    <Content Include="spotify.PortalWidget\src\sagas\opportunitiesWidget.js" />
+    <Content Include="spotify.PortalWidget\src\selectors\opportunitiesWidget.js" />
+    <Content Include="spotify.PortalWidget\src\store.js" />
+    <Content Include="spotify.PortalWidget\build-webpack.config.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\.gitignore" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\enrollmentAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\identityVerification.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\selfassessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\headerActions.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\analytics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\applicationInsights.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\enrollmentPrerequisitesPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\opportunityAnnouncement.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\opportunityDetailsPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\preferencesActions.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actions\windowResize.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\analytics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\applicationInsights.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\enrollmentAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\enrollmentPrerequisitesPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\identityVerification.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\selfassessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\headerActionTypes.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\opportunityAnnouncement.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\opportunityDetailsPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\windowResizeTypes.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\axios.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\identityVerification.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\selfAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\opportunities.min.js">
+      <DependentUpon>opportunities.js</DependentUpon>
+    </Content>
+    <Content Include="spotify.React.R2C.Mobile.Shared\components\FilterBar.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\components\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\constants.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\containers\EnrollmentPrerequisitesContainerBase.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\containers\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\containers\OpportunityBoardContainerBase.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\containers\OpportunityDetailsContainerBase.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\containers\PreferencePageContainerBase.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\helpers\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\helpers\opportunity.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\helpers\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\helpers\utils.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\enrollmentAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\enrollmentPrerequisitesPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\identityVerification.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\selfAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\Header.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\opportunityDetailsPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\PreferencesReducer.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\windowRedicer.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\analytics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\enrollmentAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\identityVerfication.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\selfAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\schema\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\3rdPartyLinks.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\backgroundCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\payment.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\identityVerification.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\agreementTemplates.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\pcCheck.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\performanceMetrics.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\photoId.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\selfAssessments.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\globalParameters.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\165x60.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\350x200.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\spotify-logo.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\spotify-logo.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\calendar-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\canada-flag-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Chat-Room.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\chatroom.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\check-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\checkbox-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\common\loading-component.gif" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\common\loading.gif" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Crowd-Hub.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Crowd Hub.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Crowd-Hub.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\crowdhub.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\happy-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\headphone-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\headset.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\help.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\info-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\info-white.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\info.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Knowledge-Zone-White.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Knowledge-Zone.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\knowledgezone-white.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\knowledgezone.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\ondemand-white.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\ondemand.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\openstar.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\privacy-off-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\privacy-on-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Schedule.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\schedule.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\servicingintervals.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\star.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Torch_Option-2.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Torch_Option-2_Preview.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\uk-flag-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\us-flag-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\video-icon.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Virtual_Classroom.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\Virtual_Classroom_Preview.png" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\warning-red.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\images\x.svg" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\DatePicker.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\SingleCheckbox.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\EnrolledProgramCard\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\RescheduleCourseModal\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\localize\index.js" />
+    <Content Include="src\actions\appActions.js" />
+    <Content Include="src\assets\images\Crowd-Hub.svg" />
+    <Content Include="src\assets\images\c_images\image 1.svg" />
+    <Content Include="src\assets\images\c_images\image 2.svg" />
+    <Content Include="src\assets\images\c_images\image 3.svg" />
+    <Content Include="src\assets\images\c_images\image 4.svg" />
+    <Content Include="src\assets\images\c_images\image 5.svg" />
+    <Content Include="src\assets\images\c_images\image 6.svg" />
+    <Content Include="src\assets\images\c_images\intervalInternational.png" />
+    <Content Include="src\assets\images\c_images\intuit quickbooks.png" />
+    <Content Include="src\assets\images\c_images\Nespresso.png" />
+    <Content Include="src\assets\images\c_images\Reliance.png" />
+    <Content Include="src\components\agentType\aadhar\Aadhar.js" />
+    <Content Include="src\components\agentType\aadhar\AadharForm.js" />
+    <Content Include="src\components\agentType\aadhar\AadharFormContainer.js" />
+    <Content Include="src\components\agentType\aadhar\AadharSchema.js" />
+    <Content Include="src\components\agentType\aadhar\customValidation\aadharValidation.js" />
+    <Content Include="src\components\agentType\SelectAgentType.js" />
+    <Content Include="src\components\agentType\joinBusiness\FindCallCenter.js" />
+    <Content Include="src\components\agentType\joinBusiness\PendingRequest.js" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusiness-US.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividual-IN.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividual-JM.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividual-US.js" />
+    <Content Include="src\components\agentType\trn\customValidation\index.js" />
+    <Content Include="src\components\agentType\trn\Trn.js" />
+    <Content Include="src\components\agentType\trn\TrnFormContainer.js" />
+    <Content Include="src\components\agentType\trn\TrnFrom.js" />
+    <Content Include="src\components\agentType\trn\TrnSchema.js" />
+    <Content Include="src\components\agentType\uniqueIdentity\customValidation\index.js" />
+    <Content Include="src\components\agentType\uniqueIdentity\UniqueIdForm.js" />
+    <Content Include="src\components\agentType\uniqueIdentity\UniqueIdFormContainer.js" />
+    <Content Include="src\components\agentType\uniqueIdentity\uniqueIdSchema.js" />
+    <Content Include="src\components\enrollmentPrerequisites\additionalFormsModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\assessmentInProgressModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\backgroundCheckModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\genericAssessmentModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\identityVerificationModal\questions.js" />
+    <Content Include="src\components\enrollmentPrerequisites\identityVerificationModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\paymentModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\pccheck\errorResults.js" />
+    <Content Include="src\components\enrollmentPrerequisites\pccheck\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\photoIdModal\index.js" />
+    <Content Include="src\components\enrollmentPrerequisites\selfassessment\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\saga\openBroswerLink.js" />
+    <Content Include="src\components\Error\index.js" />
+    <Content Include="src\components\lmsauthentication\lmsauthentication.js" />
+    <Content Include="src\components\opportunityBoard\models\AgentSwitchingProgramReasonsForm.js" />
+    <Content Include="src\components\opportunityBoard\models\AgentSwitchingProgramReasonsModal.js" />
+    <Content Include="src\components\opportunityBoard\models\JamaicaNameDOBModal.js" />
+    <Content Include="src\components\opportunityBoard\models\ParishUpdateModal.js" />
+    <Content Include="src\components\opportunityBoard\opportunityNoPreferences\index.js" />
+    <Content Include="src\components\opportunityBoard\opportunityNoPreferences\NoPreferences\NoPreferencesBar.js" />
+    <Content Include="src\components\opportunityBoard\opportunityPreferences\index.js" />
+    <Content Include="src\components\opportunityBoard\opportunityPreferences\Preferences\PreferenceBar.js" />
+    <Content Include="src\components\photoId\public.js" />
+    <Content Include="src\components\preferencePage\Modal.js" />
+    <Content Include="src\libs\detect.min.js" />
+    <Content Include="src\reducers\app.js" />
+    <Content Include="src\reducers\RegistrationReducer.min.js">
+      <DependentUpon>RegistrationReducer.js</DependentUpon>
+    </Content>
+    <Content Include="src\sagas\api\uniqueIdentityApi.js" />
+    <Content Include="src\sagas\applicationInsights.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\helpers\request.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\enrollmentPrerequisitesPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\headerWatcher.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\opportunityAnnouncement.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\opportunityDetailsPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\schema\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\schema\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\admissionSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\agentProfile.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\agentProfile.min.js">
+      <DependentUpon>agentProfile.js</DependentUpon>
+    </Content>
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\country.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\enrolledPrograms.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\enrollmentPrerequisitesPage.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\enrollmentSteps.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\welcomeContent.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\opportunities.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\opportunityBoard.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\selectors\opportunityDetailsPage.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\normalize.css" />
+    <Content Include="config-overrides.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="service-worker.js" />
+    <Content Include="src\actions\admissionStepActions.js" />
+    <Content Include="src\actions\agentTypeActions.js" />
+    <Content Include="src\actions\authActions.js" />
+    <Content Include="src\actions\legalDocsActions.js" />
+    <Content Include="src\actions\loginActions.js" />
+    <Content Include="src\actions\registrationActions.js" />
+    <Content Include="src\actions\validateAccountActions.js" />
+    <Content Include="src\appInsights.js" />
+    <Content Include="src\assets\images\165x60.png" />
+    <Content Include="src\assets\images\350x200.png" />
+    <Content Include="src\assets\images\agentType\green-check-icon.svg" />
+    <Content Include="src\assets\images\agentType\new-call-center-icon.png" />
+    <Content Include="src\assets\images\agentType\sole-proprietor-icon.png" />
+    <Content Include="src\assets\images\agentType\working-for-call-center-icon.png" />
+    <Content Include="src\assets\images\spotify-logo.png" />
+    <Content Include="src\assets\images\spotify-logo.svg" />
+    <Content Include="src\assets\images\calendar-icon.svg" />
+    <Content Include="src\assets\images\canada-flag-icon.svg" />
+    <Content Include="src\assets\images\chatroom.svg" />
+    <Content Include="src\assets\images\check-icon.svg" />
+    <Content Include="src\assets\images\checkbox-icon.svg" />
+    <Content Include="src\assets\images\common\loading-component.gif" />
+    <Content Include="src\assets\images\common\loading.gif" />
+    <Content Include="src\assets\images\Crowd Hub.svg" />
+    <Content Include="src\assets\images\Crowd-Hub.png" />
+    <Content Include="src\assets\images\crowdhub.svg" />
+    <Content Include="src\assets\images\happy-icon.svg" />
+    <Content Include="src\assets\images\headphone-icon.svg" />
+    <Content Include="src\assets\images\headset.png" />
+    <Content Include="src\assets\images\help.svg" />
+    <Content Include="src\assets\images\info-icon.svg" />
+    <Content Include="src\assets\images\info.png" />
+    <Content Include="src\assets\images\knowledgezone.svg" />
+    <Content Include="src\assets\images\ondemand.png" />
+    <Content Include="src\assets\images\openstar.png" />
+    <Content Include="src\assets\images\privacy-off-icon.svg" />
+    <Content Include="src\assets\images\privacy-on-icon.svg" />
+    <Content Include="src\assets\images\progressBar\complete-icon.svg" />
+    <Content Include="src\assets\images\Schedule.png" />
+    <Content Include="src\assets\images\schedule.svg" />
+    <Content Include="src\assets\images\servicingintervals.png" />
+    <Content Include="src\assets\images\star.png" />
+    <Content Include="src\assets\images\Torch_Option-2.svg" />
+    <Content Include="src\assets\images\Torch_Option-2_Preview.png" />
+    <Content Include="src\assets\images\uk-flag-icon.svg" />
+    <Content Include="src\assets\images\us-flag-icon.svg" />
+    <Content Include="src\assets\images\validateAccount\email-icon.svg" />
+    <Content Include="src\assets\images\validateAccount\mobile-icon.svg" />
+    <Content Include="src\assets\images\video-icon.svg" />
+    <Content Include="src\assets\images\Virtual_Classroom.svg" />
+    <Content Include="src\assets\images\Virtual_Classroom_Preview.png" />
+    <Content Include="src\assets\images\warning-red.svg" />
+    <Content Include="src\assets\images\x.svg" />
+    <Content Include="src\assets\logo.svg" />
+    <Content Include="src\components\404\index.js" />
+    <Content Include="src\components\agentType\agentData.js" />
+    <Content Include="src\components\agentType\AgentType.js" />
+    <Content Include="src\components\agentType\AgentTypeContainer.js" />
+    <Content Include="src\components\agentType\AgentTypeHelp.js" />
+    <Content Include="src\components\agentType\AgentTypeItem.js" />
+    <Content Include="src\components\agentType\AgentTypeList.js" />
+    <Content Include="src\components\agentType\AgreementsContainer.js" />
+    <Content Include="src\components\agentType\agreements\AgreementBody.js" />
+    <Content Include="src\components\agentType\agreements\DocumentItem.js" />
+    <Content Include="src\components\agentType\agreements\DocumentList.js" />
+    <Content Include="src\components\agentType\agreements\SignAgreement.js" />
+    <Content Include="src\components\agentType\ConfirmRestartAgentModal.js" />
+    <Content Include="src\components\agentType\joinBusiness\PendingRequestModal.js" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusiness.js" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusinessForm.js" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusinessFormContainer.js" />
+    <Content Include="src\components\agentType\joinBusiness\joinBusinessSchema.js" />
+    <Content Include="src\components\agentType\registerBusiness\customValidation\index.js" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusiness.js" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusinessForm.js" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusinessFormContainer.js" />
+    <Content Include="src\components\agentType\registerBusiness\registerBusinessSchema.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividual.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividualForm.js" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividualFormContainer.js" />
+    <Content Include="src\components\agentType\registerIndividual\registerIndividualSchema.js" />
+    <Content Include="src\components\agentType\ssn\customValidation\index.js" />
+    <Content Include="src\components\agentType\ssn\Ssn.js" />
+    <Content Include="src\components\agentType\ssn\SsnForm.js" />
+    <Content Include="src\components\agentType\ssn\SsnFormContainer.js" />
+    <Content Include="src\components\agentType\ssn\ssnSchema.js" />
+    <Content Include="src\components\App.js" />
+    <Content Include="src\components\auth\signin.jsx" />
+    <Content Include="src\components\auth\callback.jsx" />
+    <Content Include="src\components\auth\ensureIsAuthenticated.js" />
+    <Content Include="src\components\auth\logout.jsx" />
+    <Content Include="src\components\auth\logoutCallback.jsx" />
+    <Content Include="src\components\auth\silentRenew.jsx" />
+    <Content Include="src\components\common\BootstrapModal.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\Button.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ButtonLoading.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\CheckboxGroup.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\CheckboxInput.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\PasswordInput.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\RadioButton.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\SelectInput.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\form\TextInput.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\LoadingComponent.js" />
+    <Content Include="src\components\common\Modal.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ConfirmModal.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ModalWithForm.js" />
+    <Content Include="src\components\common\ScrollToTop.js" />
+    <Content Include="src\components\enrollmentPrerequisites\Container.js" />
+    <Content Include="src\components\enrollmentPrerequisites\enrollmentstep.js" />
+    <Content Include="src\components\forgotpassword\ForgotPassword.js" />
+    <Content Include="src\components\forgotpassword\ForgotPasswordForm.js" />
+    <Content Include="src\components\forgotpassword\ForgotPasswordFormContainer.js" />
+    <Content Include="src\components\forgotpassword\forgotPasswordSchema.js" />
+    <Content Include="src\components\forgotusername\ForgotUsername.js" />
+    <Content Include="src\components\forgotusername\ForgotUsernameForm.js" />
+    <Content Include="src\components\forgotusername\ForgotUsernameFormContainer.js" />
+    <Content Include="src\components\forgotusername\forgotUsernameSchema.js" />
+    <Content Include="src\components\layouts\AgreementLayout.js" />
+    <Content Include="src\components\layouts\AuthLayout.js" />
+    <Content Include="src\components\layouts\Footer.js" />
+    <Content Include="src\components\layouts\Header.js" />
+    <Content Include="src\components\layouts\LanguageToggle.js" />
+    <Content Include="src\components\layouts\MainLayout.js" />
+    <Content Include="src\components\layouts\header.scss" />
+    <Content Include="src\components\layouts\footer.scss" />
+    <Content Include="package-lock.json" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\resources\en.resources.json" />
+    <Content Include="src\assets\fonts\Poppins-Light.eot" />
+    <Content Include="src\assets\fonts\Poppins-Light.ttf" />
+    <Content Include="src\assets\fonts\Poppins-Light.woff" />
+    <Content Include="src\assets\fonts\Poppins-Light.woff2" />
+    <Content Include="src\assets\fonts\poppins_medium.eot" />
+    <Content Include="src\assets\fonts\poppins_medium.ttf" />
+    <Content Include="src\assets\fonts\poppins_medium.woff" />
+    <Content Include="src\assets\fonts\poppins_medium.woff2" />
+    <Content Include="src\assets\fonts\Poppins-Bold.eot" />
+    <Content Include="src\assets\fonts\Poppins-Bold.ttf" />
+    <Content Include="src\assets\fonts\Poppins-Bold.woff" />
+    <Content Include="src\assets\fonts\Poppins-Bold.woff2" />
+    <Content Include="src\assets\fonts\brandon_grotesque_bold.otf" />
+    <Content Include="src\assets\fonts\SF-Pro-Display-Regular.otf" />
+    <Content Include="src\components\enrollmentPrerequisites\index.scss" />
+    <Content Include="spotify.PortalWidget\package.json" />
+    <Content Include="spotify.PortalWidget\public\manifest.json" />
+    <Content Include="spotify.PortalWidget\src\index.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\package.json" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_alert.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_badge.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_breadcrumb.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_button-group.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_buttons.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_card.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_carousel.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_close.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_code.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_custom-forms.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_dropdown.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_forms.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_functions.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_grid.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_images.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_input-group.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_jumbotron.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_list-group.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_media.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_mixins.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_modal.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_nav.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_navbar.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_pagination.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_popover.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_print.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_progress.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_reboot.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_root.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_spinners.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_tables.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_toasts.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_tooltip.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_transitions.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_type.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_utilities.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\_variables.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\bootstrap-grid.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\bootstrap.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_alert.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_badge.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_buttons.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_caret.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_float.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_forms.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_gradients.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_grid.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_hover.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_image.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_list-group.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_lists.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_pagination.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_resize.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_size.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_table-row.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_transition.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\mixins\_visibility.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_align.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_background.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_borders.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_display.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_embed.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_flex.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_float.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_overflow.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_position.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_shadows.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_sizing.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_spacing.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_text.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\utilities\_visibility.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\vendor\bootstrap\vendor\_rfs.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_assessment-state.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_badge.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_button.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_carousel.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_checkbox.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_containers.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_form-fields.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_lists-tables.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_messages.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_opportunity.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_program-board.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_progress-trackers.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_scrollbar.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_typography.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_utilities.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\forms.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\inline-svg-function.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\variables.scss" />
+    <Content Include="src\assets\styles\index.scss" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Light.eot" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Light.ttf" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Light.woff" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Light.woff2" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Medium.ttf" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Medium.woff" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\poppins_medium.eot" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\poppins_medium.ttf" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\poppins_medium.woff" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\poppins_medium.woff2" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Bold.otf" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Bold.eot" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Bold.ttf" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Bold.woff" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Bold.woff2" />
+    <Content Include="spotify.PortalWidget\src\assets\fonts\Poppins-Regular.otf" />
+    <Content Include="spotify.PortalWidget\src\components\app.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\assets\styles\_headings.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\.Readme" />
+    <Content Include="spotify.PortalWidget\.nvmrc" />
+    <Content Include="spotify.PortalWidget\.npmrc" />
+    <Content Include="src\components\enrollmentPrerequisites\pccheck\index.scss" />
+    <Content Include="src\components\enrollmentPrerequisites\identityVerificationModal\index.scss" />
+    <Content Include="src\components\enrollmentPrerequisites\paymentModal\index.scss" />
+    <None Include=".env.prod" />
+    <Content Include="src\components\agentType\joinBusiness\FindCallCenter.module.scss" />
+    <Content Include="src\components\agentType\joinBusiness\PendingRequest.module.scss" />
+    <Content Include="src\components\agentType\trn\TrnForm.module.scss" />
+    <Content Include="src\components\agentType\trn\TrnFormContainer.module.scss" />
+    <Content Include="public\Web.config" />
+    <Content Include="src\components\agentType\aadhar\AadharForm.module.scss" />
+    <Content Include="src\components\agentType\aadhar\AadharFormContainer.module.scss" />
+    <Content Include="src\components\agentType\uniqueIdentity\UniqueIdForm.module.scss" />
+    <Content Include="src\components\agentType\uniqueIdentity\UniqueIdFormContainer.module.scss" />
+    <None Include="src\components\layouts\MainLayoutFullNavAuthenticated.scss" />
+    <Content Include="src\components\layouts\MainLayoutFullNavAuthenticated.js" />
+    <Content Include="src\components\layouts\WindowResize.js" />
+    <Content Include="src\components\logout\LogOut.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\CancelEnrollmentModal\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\banner.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\inProgressActions.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\inProgressDetails.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\CourseCountDown.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\DropEnrollmentModal\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\EnrollCourseModal\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\mediaWithSelect.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\breakdown.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\earnings.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\details.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\cardtitle.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\QuickOverviewCard\index.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\ActiveFiltersOverview.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\DesktopFilterPane.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\FilterBar.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\FilterBar.view.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\FilterFields.view.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\FilterFieldsSection.view.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\MobileFilterModal.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\incentives.js" />
+    <Content Include="src\components\opportunityBoard\opportunities\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\monthlyrevenue.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\videoModal.js" />
+    <Content Include="src\components\opportunityBoard\Container.js" />
+    <Content Include="src\components\opportunityBoard\Container.View.js" />
+    <Content Include="src\components\opportunityDetails\Container.js" />
+    <Content Include="src\components\opportunityDetails\Container.View.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityAssessments.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityCourseInfo.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityDetailAlerts.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityDetailTitle.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityEquipment.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityMarketingBanner.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityMatch.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityRevenue.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityServicingInfo.js" />
+    <Content Include="src\components\opportunityDetails\OpportunityVideo.js" />
+    <Content Include="src\components\outstandingTaskAlert\index.js" />
+    <Content Include="src\components\pickClient\PortalRedirect.js" />
+    <Content Include="src\components\opportunityBoard\inProgress\index.js" />
+    <Content Include="src\components\preferencePage\Container.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\CountrySelectField.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\PhoneField.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\PhoneFieldUK.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\RadioButton.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\StateSelectField.js" />
+    <Content Include="src\components\registration\profile\customFieldComponents\TermsOfServiceField.js" />
+    <Content Include="src\components\registration\profile\customValidation\index.js" />
+    <Content Include="src\components\registration\validateAccount\ValidateAccount.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\UpdateEmailForm.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\UpdateEmailFormContainer.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\updateEmailSchema.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\ValidateEmail.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\ValidateEmailForm.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\ValidateEmailFormContainer.js" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\validateEmailSchema.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\UpdatePhoneForm.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\UpdatePhoneFormContainer.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\updatePhoneSchema.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\ValidatePhone.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\ValidatePhoneForm.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\ValidatePhoneFormContainer.js" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\validatePhoneSchema.js" />
+    <Content Include="src\components\resetpassword\ResetPassword.js" />
+    <Content Include="src\components\resetpassword\ResetPasswordForm.js" />
+    <Content Include="src\components\resetpassword\ResetPasswordFormContainer.js" />
+    <Content Include="src\components\resetpassword\resetPasswordSchema.js" />
+    <Content Include="src\components\Sample\index.js" />
+    <Content Include="src\components\shared\admissionSteps\AdmissionSteps.js" />
+    <Content Include="src\components\shared\admissionSteps\data\index.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\SuccessMessage.js" />
+    <Content Include="src\components\shared\NavigationHeader.js" />
+    <Content Include="src\components\shared\ProgressBar.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ErrorMessage.js" />
+    <Content Include="src\components\shared\RegistrationHeader.js" />
+    <Content Include="src\components\shared\RestartNextFooter.js" />
+    <Content Include="src\components\shared\sidebars\HowItWorks.js" />
+    <Content Include="src\components\shared\Slider.js" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\VideoPlayer.js" />
+    <Content Include="src\components\welcome\Welcome.js" />
+    <Content Include="src\components\zerostate\stateModal.js" />
+    <Content Include="src\config.js" />
+    <Content Include="src\constants.js" />
+    <Content Include="src\const\helpers.js" />
+    <Content Include="src\helpers\businessLogicHelper.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\helpers\formHelpers.js" />
+    <Content Include="src\helpers\formValidation.js" />
+    <Content Include="src\helpers\uiHelpers.js" />
+    <Content Include="src\history.js" />
+    <Content Include="src\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\middleware\index.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\middleware\logger.js" />
+    <Content Include="src\providers\authProvider.jsx" />
+    <Content Include="src\reducers\AdmissionStepReducer.js" />
+    <Content Include="src\reducers\AgentProfileReducer.js" />
+    <Content Include="src\reducers\AgentTypeReducer.js" />
+    <Content Include="src\reducers\AuthReducer.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\reducers\country.js" />
+    <Content Include="src\reducers\ForgotPasswordReducer.js" />
+    <Content Include="src\reducers\ForgotUsernameReducer.js" />
+    <Content Include="src\reducers\index.js" />
+    <Content Include="src\reducers\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
+    <Content Include="src\reducers\LegacyUser.js" />
+    <Content Include="src\reducers\LegalDocsReducer.js" />
+    <Content Include="src\reducers\LoginReducer.js" />
+    <Content Include="src\reducers\ReCaptchaReducer.js" />
+    <Content Include="src\reducers\RegistrationReducer.js" />
+    <Content Include="src\reducers\ResetPasswordReducer.js" />
+    <Content Include="src\reducers\ValidateAccountReducer.js" />
+    <Content Include="src\routes.js" />
+    <Content Include="src\sagas\admissionStepWatcher.js" />
+    <Content Include="src\sagas\agentTypeWatcher.js" />
+    <Content Include="src\sagas\api\admissionStepApi.js" />
+    <Content Include="src\sagas\api\agentTypeApi.js" />
+    <Content Include="src\sagas\api\asyncFormApi.js" />
+    <Content Include="src\sagas\api\index.js" />
+    <Content Include="src\sagas\api\legalDocsApi.js" />
+    <Content Include="src\sagas\api\loginApi.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\api\PreferencesApi.js" />
+    <Content Include="src\sagas\api\registrationApi.js" />
+    <Content Include="src\sagas\api\validateAccountApi.js" />
+    <Content Include="src\sagas\authWatcher.js" />
+    <Content Include="src\sagas\helpers\request.js" />
+    <Content Include="src\sagas\index.js" />
+    <Content Include="src\sagas\index.min.js">
+      <DependentUpon>index.js</DependentUpon>
+    </Content>
+    <Content Include="src\sagas\legalDocsWatcher.js" />
+    <Content Include="src\sagas\loginWatcher.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\sagas\preferencesWatcher.js" />
+    <Content Include="src\sagas\registrationWatcher.js" />
+    <Content Include="src\sagas\routeChange.js" />
+    <Content Include="src\sagas\validateAccountWatcher.js" />
+    <Content Include="src\screensConfig.js" />
+    <Content Include="src\services\authService.jsx" />
+    <Content Include="src\setupTests.js" />
+    <Content Include="src\store.js" />
+    <Content Include="src\types\admissionStepTypes.js" />
+    <Content Include="src\types\agentTypeTypes.js" />
+    <Content Include="src\types\appTypes.js" />
+    <Content Include="src\types\authTypes.js" />
+    <Content Include="src\types\legalDocsTypes.js" />
+    <Content Include="src\types\loginTypes.js" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\actionTypes\preferencesTypes.js" />
+    <Content Include="src\types\registrationTypes.js" />
+    <Content Include="src\types\validateAccountTypes.js" />
+    <Content Include="src\utils\authConst.js" />
+    <Content Include="src\components\opportunityBoard\models\ParishUpdateModal.module.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".npmrc" />
+    <Content Include=".nvmrc" />
+    <Content Include="manifest.json" />
+    <Content Include="package.json" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\package.json" />
+    <Content Include="spotify.React.R2C.Mobile.Shared\README.md" />
+    <None Include="bundleconfig.json" />
+    <None Include="packages.config" />
+    <Content Include="public\manifest.json" />
+    <Content Include="README.md" />
+    <Content Include="src\assets\fonts\Poppins-Medium.ttf" />
+    <Content Include="src\assets\fonts\Poppins-Medium.woff" />
+    <Content Include="src\components\agentType\AgentType.module.scss" />
+    <Content Include="src\components\agentType\AgentTypeHelp.module.scss" />
+    <Content Include="src\components\agentType\AgentTypeItem.module.scss" />
+    <Content Include="src\components\agentType\AgentTypeList.module.scss" />
+    <Content Include="src\components\agentType\AgreementsContainer.module.scss" />
+    <Content Include="src\components\agentType\agreements\AgreementBody.module.scss" />
+    <Content Include="src\components\agentType\agreements\DocumentItem.module.scss" />
+    <Content Include="src\components\agentType\agreements\SignAgreement.module.scss" />
+    <Content Include="src\components\agentType\ConfirmRestartAgentModal.module.scss" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusiness.module.scss" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusinessForm.module.scss" />
+    <Content Include="src\components\agentType\joinBusiness\JoinBusinessFormContainer.module.scss" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusiness.module.scss" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusinessForm.module.scss" />
+    <Content Include="src\components\agentType\registerBusiness\RegisterBusinessFormContainer.module.scss" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividualForm.module.scss" />
+    <Content Include="src\components\agentType\registerIndividual\RegisterIndividualFormContainer.module.scss" />
+    <Content Include="src\components\agentType\ssn\SsnForm.module.scss" />
+    <Content Include="src\components\agentType\ssn\SsnFormContainer.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\Button.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ButtonLoading.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\LoadingComponent.module.scss" />
+    <Content Include="src\components\forgotpassword\ForgotPasswordForm.module.scss" />
+    <Content Include="src\components\forgotpassword\ForgotPasswordFormContainer.module.scss" />
+    <Content Include="src\components\forgotusername\ForgotUsernameForm.module.scss" />
+    <Content Include="src\components\forgotusername\ForgotUsernameFormContainer.module.scss" />
+    <Content Include="src\components\registration\validateAccount\ValidateAccount.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\UpdateEmailForm.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\UpdateEmailFormContainer.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\ValidateEmailForm.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validateEmail\ValidateEmailFormContainer.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\UpdatePhoneForm.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\UpdatePhoneFormContainer.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\ValidatePhoneForm.module.scss" />
+    <Content Include="src\components\registration\validateAccount\validatePhone\ValidatePhoneFormContainer.module.scss" />
+    <Content Include="src\components\resetpassword\ResetPasswordForm.module.scss" />
+    <Content Include="src\components\resetpassword\ResetPasswordFormContainer.module.scss" />
+    <Content Include="src\components\shared\admissionSteps\AdmissionSteps.module.scss" />
+    <Content Include="src\components\shared\NavigationHeader.module.scss" />
+    <Content Include="src\components\shared\ProgressBar.module.scss" />
+    <Content Include="src\components\shared\RegistrationHeader.module.scss" />
+    <Content Include="src\components\shared\RestartNextFooter.module.scss" />
+    <Content Include="src\components\shared\sidebars\HowItWorks.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\VideoPlayer.module.scss" />
+    <Content Include="src\index.scss" />
+    <Content Include="src\components\registration\profile\Profile.module.scss" />
+    <Content Include="src\components\opportunityBoard\index.scss" />
+    <Content Include="src\components\opportunityBoard\opportunities\Filterbar\filterBar.scss" />
+    <Content Include="src\components\opportunityBoard\opportunities\index.scss" />
+    <Content Include="src\resources\en.resources.json" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\Card\card.scss" />
+    <Content Include="src\components\agentType\joinBusiness\PendingRequestModal.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\opportunities\CourseCountDown.scss" />
+    <Content Include="src\components\opportunityDetails\index.scss" />
+    <Content Include="src\components\opportunityBoard\inProgress\index.scss" />
+    <Content Include="src\components\outstandingTaskAlert\index.scss" />
+    <Content Include="src\components\zerostate\index.scss" />
+    <Content Include="src\components\shared\Slider.module.scss" />
+    <Content Include="src\components\opportunityDetails\OpportunityDetailAlerts.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\ErrorMessage.module.scss" />
+    <Content Include="spotify.React.R2C.Web.Shared\components\common\SuccessMessage.module.scss" />
+    <Content Include="src\components\opportunityBoard\opportunityNoPreferences\index.scss" />
+    <Content Include="src\components\opportunityBoard\opportunityPreferences\index.scss" />
+    <Content Include="src\components\opportunityBoard\models\AgentSwitchingProgramReasonsForm.module.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="spotify.React.R2C.Web.Shared\helpers\" />
+    <Folder Include="src\components\app\" />
+    <Folder Include="src\components\programs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57821</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57821/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,75 @@
+// Colors
+$blue: #00827e; //#4f81bd Changed to spotify rebranding #00827e  
+$blue-button: #00827e; //#4d7fbf Changed to spotify rebranding #007b82  
+$blue-light: #e5f7f7; //#5b9bd5 Changed to spotify rebranding #e5f7f7 
+$green-success: #a1ca39;
+$red-error: #D04E56;
+$red-light: #f08080;
+$gray-lightest: #EAEFF2;
+$gray-light: #d5d5d5;
+$gray-dark: #455154;
+$gray-disabled: #b6b6b6;
+$gray-checkpoint: #ababab;
+$white: #ffffff;
+$white-nav: #eaeff2;
+$white-button: #f2f2f2;
+$task-alert: #FF8D50;
+$red-register: #D75457;
+$textColor: #42414E;
+
+// Font Family
+$font-primary: 'Poppins Regular';
+$font-secondary: 'Open Sans';
+$btn-font-family: 'Poppins Regular' !important;
+// Font Weights
+$normal: normal;
+$semi-bold: 400;
+$bold: 700;
+
+// Box Shadows
+$box-shadow-button: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-autofill: 0 0 0 30px $white inset !important;
+
+// Border Radius
+$border-radius-button: 24px;
+
+// Screen sizes for responsive break points
+$screen-xs: 415px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1600px;
+
+// Brand colors
+// primary
+$spotify-blue: #00827e;
+$dark-gray: #717073;
+$black: #333;
+$newBlack: #42414E;
+
+
+// secondary
+$secondary-black: #666;
+$dark-blue: #004F4D; //#203864 is changed to match spotify re-branding 004F4D 
+$light-gray: #9ea1a2;
+$light-blue: #59d4d0;
+$orange: #FF8D50;
+$secondary-orange: #FF5B03;
+$light-orange: #FFBF9D;
+$red: #D65767;
+$white: #fff;
+$lighter-gray: #DBE2E2;
+$tertiary-gray: #c2caca;
+$tab-background: #eaeff2;
+$card-background: #EAEFF2;
+$secondary-grey: light-grey;
+
+
+// Bootstrap color overwrite (goes before bootstrap imports)
+$primary: $spotify-blue;
+$secondary: $light-gray;
+$text-muted: $secondary-black;
+// End of Bootstrap color overwrite
+
+$box-shadow: 0px 0px 20px rgba(194, 202, 202, .6);

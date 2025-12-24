@@ -1,0 +1,68 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+#OportunityBoardContainer {
+  padding-top: 15px;
+}
+#OportunityBoardFilter {
+    border-top: 1px solid $lighter-gray;
+    border-bottom: 1px solid $lighter-gray;
+    //background-color: $tab-background;
+    //border-right: 1px solid $lighter-gray;
+    margin-top: 23px;
+    //padding-right: 16px;
+    //padding-left: 17px;
+}
+#OportunityBoardContent {
+    //border-top: 1px solid $lighter-gray;
+    padding-top: 23px;
+    padding-left: 32px;
+}
+
+.card-new{
+  // display: grid;
+  // display:-ms-flexbox;
+  // flex-shrink: 0;
+  // grid-template-columns: 32% 32% 32%;
+  // grid-row-gap: 33px;
+  // grid-column-gap: 32px;
+  margin-bottom: 32px;
+ 
+  // @media(min-width:$screen-xl)and (max-width:$screen-xxl){
+  //   grid-row-gap: 20px;
+  //   grid-column-gap: 30px;
+  // }
+  // @media(min-width:$screen-md)and (max-width:$screen-xl) {
+  //   grid-template-columns: 47% 47%;
+  //   grid-gap:12px;
+  // }
+  // @media(max-width:$screen-lg){
+  //   grid-template-columns: 100%;
+  // }
+  
+}
+
+
+// @media all and (-ms-high-contrast: active), (-ms-high-contrast: none){
+//   .card-new{
+//     display: -ms-flexbox;
+//     width:32%;
+//   }
+// }
+
+
+// .card-new >.card{
+//   width:32%;
+//   margin-right:32px;
+// }
+
+
+
+.opportunitiesContainer {
+   
+}
+@media screen and (max-width:$screen-sm){
+  #OportunityBoardContent{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

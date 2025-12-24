@@ -1,0 +1,10 @@
+// Bootstrap Checkbox border radius
+.custom-checkbox .custom-control-label:before {
+    border-radius: 2px;
+}
+
+.custom-control-label:after {
+    background: no-repeat 50%/50% 50%;
+    background-size: 70%;
+}
+// End of Bootstrap Checkbox border radius

@@ -1,0 +1,103 @@
+@import '~spotify-shared-web/assets/styles/variables';
+.read-more-less-btn{
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    color: #0166d6;
+    //width: 74.5px;
+   // text-decoration: underline;
+}
+.read-more-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    //line-height: 26px;
+    float: right;
+    @media screen and(max-width:$screen-xxl){
+      font-size: 12px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-xl){
+      font-size: 12px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-lg){
+      font-size: 13px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-md){
+      font-size: 13px;
+    line-height: 18px;
+    }
+}
+.read-less-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #0166d6;
+    margin-top: 1.5rem;
+    padding-left: 0px;
+    @media screen and(max-width:$screen-xxl){
+      font-size: 12px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-xl){
+      font-size: 12px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-lg){
+      font-size: 13px;
+    line-height: 18px;
+    }
+    @media screen and(max-width:$screen-md){
+      font-size: 13px;
+    line-height: 18px;
+    }
+
+}
+.agreement-item {
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-light;
+    //padding-bottom: 6px;
+
+    @media (min-width: $screen-sm) {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    &--text {
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 15px;
+      line-height: 26px;
+      color: #42414E;
+      text-align: justify;
+
+      @media screen and(max-width:$screen-xxl){
+        font-size: 12px;
+      line-height: 18px;
+      }
+      @media screen and(max-width:$screen-xl){
+        font-size: 12px;
+      line-height: 18px;
+      }
+      @media screen and(max-width:$screen-lg){
+        font-size: 13px;
+      line-height: 24px;
+      }
+      @media screen and(max-width:$screen-md){
+        font-size: 13px;
+      line-height: 24px;
+      }
+    }
+  }
+
+}
+button:focus{
+  outline: none;
+}

@@ -1,0 +1,26 @@
+@import '~spotify-shared-web/assets/styles/variables';
+@import '~spotify-shared-web/assets/styles/forms';
+
+.submit-wrapper {
+  //margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.text-bold {
+  //font-weight: bold;
+font-style: normal;
+font-weight: 600;
+font-size: 16px !important;
+line-height: 19px;
+color: #42414E;
+margin-bottom: 12px !important;
+}
+.agreementcopy{
+  font-style: normal !important;
+font-weight: normal !important;
+font-size: 15px;
+line-height: 22px !important;
+color: #42414E;
+}

@@ -1,0 +1,51 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.form-container {
+  &__header {
+    //font-weight: $bold;
+    //font-size: 18px;
+    //line-height: 22px;
+    //color: $spotify-blue;
+    //font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-style: normal;
+    color: #42414E;
+    margin: 0 0 12px;
+    ;
+  }
+
+  &__copy {
+    font-weight: $normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: $newBlack;
+    margin: 0 0 18px;
+  }
+}
+
+@media screen and (max-width:$screen-xl) {
+  .form-container {
+
+    &__header,
+    &__copy {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width:$screen-lg) {
+  .form-container {
+    &__header {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.justified-text {
+  text-align: justify;
+  line-height: 1.5;
+  width: 70%;
+  margin: left;
+  font-size: 12px;
+}

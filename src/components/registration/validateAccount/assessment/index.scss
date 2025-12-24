@@ -1,0 +1,47 @@
+.assessment-container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Poppins;
+    text-align: left;
+  }
+  
+  .harv-assessment-title {
+    font-size: 28px;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  .assessment-info {
+    font-size: 14px;
+    color: #42414E;
+    margin-bottom: 30px;
+  }
+  
+  .assessment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assessment-button:hover {
+    background-color: #005a4c;
+  }
+  
+  .assessment-note {
+    font-size: 14px;
+    color: #42414E;
+    margin-bottom: 20px;
+  }
+  
+  .assessment-good-luck {
+    font-size: 14px;
+    color: #42414E;
+    font-weight: bold;
+  }
+  

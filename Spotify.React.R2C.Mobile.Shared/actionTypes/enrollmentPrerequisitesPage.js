@@ -1,0 +1,4 @@
+
+export const InitializeEnrollmentPrerequisitesPage = "InitializeEnrollmentPrerequisitesPage";
+export const InitializeEnrollmentPrerequisitesPageComplete = "InitializeEnrollmentPrerequisitesPageComplete";
+export const InitializeEnrollmentPrerequisitesPageError = "InitializeEnrollmentPrerequisitesPageError";

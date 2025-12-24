@@ -1,0 +1,36 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.confirm-modal {
+  padding: 24px;
+
+  @media (min-width: $screen-sm) {
+    padding: 35px;
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: 18px;
+    font-weight: $normal;
+    line-height: 22px;
+    color: $newBlack;
+    margin: 0 0 16px;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 0 32px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-right: 24px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

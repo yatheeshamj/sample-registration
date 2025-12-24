@@ -1,0 +1,42 @@
+@import '~spotify-shared-web/assets/styles/variables';
+.filter-section {
+    background-color: #EAEFF2;
+}
+.filter-section-header {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+.filter-section-container {
+}
+.filter-section-title {
+}
+
+.filter-item {
+  padding: 10px 0px 20px 0px;
+}
+
+@media (max-width: $screen-md) {
+    // .filter-item {
+    //    border: 1px solid #dee2e6;
+    // }
+  .filter-section {
+    background-color: white;
+  }
+}
+
+.MobileFilterModal {
+  margin:auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.MobileFilterModal .modal-header,
+.MobileFilterModal .modal-footer {
+  height: 100px;
+}
+.MobileFilterModal .modal-body {
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,51 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.nav-wrapper {
+  padding: 14px 0 10px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  color: #9EA1A2;
+
+  &__title {
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.4px;
+    color: #9EA1A2;
+    text-align: left;
+  }
+
+  &__link-wrapper {
+    a {
+      font-size: 14px;
+      font-weight: $normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 16px;
+      letter-spacing: -0.4px;
+      color: $blue;
+      text-decoration: none;
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: $normal;
+    color: $blue;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,33 @@
+@import '~spotify-shared-web/assets/styles/variables';
+.align-center {
+    text-align: center;
+}
+
+.horizontal-spacing {
+    padding: 0 24px;
+
+}
+.mobile-icon{
+    float: right;
+}
+.mainDiv{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*@media screen and (max-width:1024px) {
+    .mobile-icon{
+        margin-top: 20%;
+    }
+}*/
+.align-right{
+    text-align: right;
+}
+/*@media screen and (min-width:$screen-md) and (max-width: $screen-xxl ) {
+    .mobile-icon{
+        width:90%;
+        height:100%;
+    }
+}
+*/

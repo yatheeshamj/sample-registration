@@ -1,0 +1,29 @@
+@import "~spotify-shared-web/assets/styles/variables.scss";
+
+.opportunityDetailsContainer {
+    .relatedOpportunitiesContainer {
+        text-align: center;
+    }
+
+    .relatedOpportunitiesTitle {
+    }
+
+    .Opportunity-Detail-img-container {
+        height: 150px;
+    }
+
+    .clientName {
+        font-size: 20px;
+        font-weight: bold;
+        color: RGB(83, 132, 193);
+    }
+
+    .theDetails {
+        background-color: $white-nav;
+    }
+
+
+
+
+   
+}

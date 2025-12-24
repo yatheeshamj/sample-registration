@@ -1,0 +1,70 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.find-call-center {
+    border-radius: 4px;
+    background-color: #EAEFF2;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    
+
+    &__header {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.4px;
+        color: $newBlack;
+        margin: 0 0 8px;
+    }
+
+    &__cta {
+        font-weight: $normal;
+        color: $blue;
+        font-size: 16px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        text-decoration: underline;
+        outline: none;
+        background: none;
+        margin-bottom: 8px;
+    }
+
+    &__copy {
+        //font-size: 14px;
+        font-weight: $normal;
+        color: $newBlack;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:$screen-xxl) {
+    .find-call-center{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:$screen-xl) {
+    .find-call-center{
+        padding: 18px;
+    }
+}
+@media screen and (max-width:$screen-lg) {
+    .find-call-center{
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width:$screen-md) {
+    .find-call-center{
+        padding: 18px;
+        // margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:$screen-sm) {
+    .find-call-center{
+        padding: 18px 12px;
+    }
+}

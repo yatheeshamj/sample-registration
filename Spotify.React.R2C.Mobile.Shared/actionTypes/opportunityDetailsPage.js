@@ -1,0 +1,4 @@
+export const InitializeOpportunityDetailsPage = "InitializeOpportunityDetailsPage";
+export const InitializeOpportunityDetailsPageComplete = "InitializeOpportunityDetailsPageComplete";
+export const FetchUserDataProgram="FetchUserDataProgram"
+export const FetchUserDataProgramComplete="FetchUserDataProgramComplete"

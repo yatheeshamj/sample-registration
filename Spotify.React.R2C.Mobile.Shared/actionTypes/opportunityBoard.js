@@ -1,0 +1,22 @@
+export const InitializeOpportunityBoard = "Initialize Opportunity Board";
+export const SET_TAB = 'SET_opportunityBoard_TAB';
+
+export const SetOpportunityFilterFeild = 'Set Opportunity Filter Field';
+export const SetOpportunityFilter = 'Set Opportunity Filter Object';
+export const SetOpportunitySort = 'Set Opportunity Sort';
+export const SetFilterCounts = "Set Filter Counts";
+export const SetOpportunitiesTabData = "Set Opportunities Tab Data";
+export const CalculateOpportunities ="Calculate Opportunities";
+export const SetOpportunityFilterDefaults = "Set Opportunity Filter Defaults";
+export const ResetOpportunityFilterDefaults = "Reset Opportunity Filter Defaults";
+export const SetFilterOptionValue = "Set Filter Option Value";
+export const SetIntialFilterCountCompleted = "Set Intial Filter Count Completed";
+export const SetInProgressTabData = "Set In Progress Tab Data";
+export const FetchOpportunityFilterOptions = 'Fetch Opportunity Filter Options';
+export const FetchOpportunityFilterOptionsComplete = 'Fetch Opportunity Filter Options Complete';
+export const FetchOpportunityFilterOptionsError = 'Fetch Opportunity Filter Options Error';
+//export const  = 'Set Opportunity Filter Field All';
+export const InitializeOpportunityBoardSecondInstance = "Initialize Opportunity Board Second Instance";
+export const setOpportunityInstanceTypeValue = 'Set Opporunity Instance Type Values';
+export const InitializeOpportunityBoardFirstInstance = "Initialize Opportunity Board First Instance";
+export const SetOpportunityBoardType = "Set Opportunity Board Type";

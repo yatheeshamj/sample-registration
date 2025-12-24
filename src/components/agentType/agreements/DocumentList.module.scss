@@ -1,0 +1,19 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.pending-sign {
+    border-radius: 4px;
+    background-color: #f2f7fe;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+
+    &__header {
+        font-size: 16px;
+        font-weight: $semi-bold;
+        line-height: 22px;
+        letter-spacing: -0.4px;
+        color: $gray-dark;
+        margin: 0 0 8px;
+    }
+
+}
+

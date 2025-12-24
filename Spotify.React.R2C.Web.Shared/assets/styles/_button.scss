@@ -1,0 +1,50 @@
+// Bootstrap Button
+.btn-medium {
+ height:48px;
+ width: 90px;
+}
+
+.btn-large {
+    height: 48px;
+    width:120px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: $light-blue;
+    border-color: $light-blue;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.open>.dropdown-toggle.btn-outline-primary {
+    color: $light-blue;
+    background-color: white;
+    border-color: $light-blue;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.open>.dropdown-toggle.btn-outline-primary {
+    color: $white;
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.open>.dropdown-toggle.btn-outline-primary {
+    color: $dark-blue;
+    background-color: white;
+    border-color: $dark-blue;
+}
+
+// .btn-primary.focus,
+// .btn-primary:focus,
+// .custom-control-input:focus~.custom-control-label:before,
+// .btn-outline-primary.focus,
+// .btn-outline-primary:focus {
+//     box-shadow: none;
+// }
+
+// End of Bootstrap Button

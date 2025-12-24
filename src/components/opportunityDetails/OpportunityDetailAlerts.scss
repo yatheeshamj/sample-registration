@@ -1,0 +1,127 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #00827e;
+    stroke-linecap: square;
+}
+.opp-progress-title {
+   
+}
+.opp-progress-percent {
+    color: #00827e;
+}
+.OpportunityDetailAlertsContainer {
+    background-color: $white-nav;
+    margin-top: -23px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.OpportunityDetailAlertsTitle {}
+
+.OpportunityDetailAlertsActions {
+    margin-top: 15px;
+    display: flex;
+}
+
+.OpportunityDetailAlertsActions button:not(:first-child) {
+    margin-left: 15px;
+}
+
+.OpportunityDetailAlerts-progress-bar {
+    display: flex;
+    align-items: center;
+    margin: 25px auto 56px auto;
+    width: 276px;
+
+    @media (min-width: $screen-md) {
+        width: 414px;
+    }
+}
+
+.OpportunityDetailAlerts-checkpoint {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border: 2px solid $gray-light;
+    background: $white;
+    border-radius: 100%;
+}
+
+.OpportunityDetailAlerts-checkpoint-active {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border: 2px solid $blue;
+    background: $white;
+    border-radius: 100%;
+}
+
+.OpportunityDetailAlerts-checkpoint-complete {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    background: url("../../assets/images/progressBar/complete-icon.svg") center center no-repeat;
+    border-radius: 100%;
+}
+
+.OpportunityDetailAlerts-checkpoint-name {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: $semi-bold;
+    color: $gray-checkpoint;
+    font-size: 14px;
+}
+
+.OpportunityDetailAlerts-checkpoint-name-complete {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-weight: $semi-bold;
+    color: $blue;
+    font-size: 14px;
+}
+
+.OpportunityDetailAlerts-divider {
+    height: 2px;
+    width: 70px;
+    background: $gray-light;
+
+    @media (min-width: $screen-md) {
+        width: 116px;
+    }
+}
+
+.OpportunityDetailAlerts-divider-complete {
+    height: 2px;
+    width: 70px;
+    background: $blue;
+
+    @media (min-width: $screen-md) {
+        width: 116px;
+    }
+}
+
+@media (max-width: 380px) {
+    .OpportunityDetailAlertsActions {
+        display: block !important;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .OpportunityDetailAlertsActions button:not(:first-child) {
+        margin-left: 3px;
+    }
+    .OpportunityDetailAlertsActions button {
+        padding: 0.5rem .25rem;
+        font-size: 0.75rem;
+    }
+}

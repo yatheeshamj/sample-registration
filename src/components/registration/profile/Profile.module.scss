@@ -1,0 +1,37 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+@media (max-width: $screen-md) {
+  .container-wrapper {
+    display: flex;
+    flex-wrap: wrap;   
+  
+  }
+
+  .form-container {
+    order: 2;
+  }
+
+  .how-it-works {
+    order: 1;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: $bold;
+  letter-spacing: -0.2px;
+  margin: -40px 0 4px 0;
+  color: $blue;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.subtitle {
+  font-style: normal;
+  letter-spacing: -0.4px;
+  margin: -20px 0 0 0;
+  color: $newBlack;
+  font-size: 18px;
+  line-height: 22px;
+  color: $blue;
+}

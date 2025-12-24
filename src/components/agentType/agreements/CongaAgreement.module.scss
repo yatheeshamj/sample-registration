@@ -1,0 +1,82 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+.card-new{
+    background-color: $card-background  !important;
+    padding:5% ;           //changing from 2rem
+    margin-bottom: 1rem;
+    margin-top:1.5rem;
+    @media (max-width:$screen-sm){
+        padding:24px 27px;
+    }
+    
+    
+}
+.img-container{
+    margin:auto;
+    margin-right: 2rem;
+
+    // @media (min-width:1200px) and (max-width:1600px) {
+    //     margin:auto;
+       
+    // }
+}
+
+.img-us{
+    width:6.5rem;
+    height:7.5rem;
+    @media (max-width:$screen-sm){
+        display: block;
+        width:8rem;
+       
+        margin:auto;
+    }
+//     @media (min-width:$screen-lg) and (max-width:$screen-xl){
+//         width:5.5rem
+//    }
+    @media (min-width:$screen-lg) and (max-width:$screen-xl){
+         width:5.5rem
+    }
+    @media (min-width:$screen-md) and (max-width:$screen-lg){
+        width:8.5rem;
+        height:8.5rem;
+    }
+   
+}
+
+.description{
+    margin-left:2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width:$screen-md){
+        margin:0;
+    }
+    @media (min-width:$screen-lg) and (max-width:$screen-xxl) {
+            margin-left: 5rem;    
+    }
+    @media (min-width:$screen-xxl) {
+            margin-left: 8rem;    
+    }
+    p{
+        margin-bottom: 24px;
+        line-height: 22.5px;
+        // margin-bottom:1.5rem;
+        @media (max-width:$screen-sm){
+            margin: 1rem !important;
+            text-align: center;
+        }
+        @media (min-width:$screen-lg) and (max-width:$screen-xxl) {
+            font-size: 12px;
+            line-height:18px;
+            margin-bottom:18px !important;  
+    }
+        
+        
+    }
+}
+
+.error-message{
+    font-size: 12px;
+    color: $red;
+
+}

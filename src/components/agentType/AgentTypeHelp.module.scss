@@ -1,0 +1,85 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.agent-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background: $gray-lightest;
+    // box-shadow: $box-shadow;
+    border-radius: 4px;
+    // height: 100%;
+
+    @media (min-width: $screen-sm) {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+
+    &__video-wrapper {
+        margin-right: 0;
+
+        @media (min-width: $screen-sm) {
+            // margin-right: 4px;
+        }
+
+        div {
+            /* height: 142px;
+            width: 241px;*/
+            background: $gray-light;
+            border-radius: 4px;
+
+            @media screen and (max-width:$screen-sm) {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__content-wrapper {
+        margin-top: 12px;
+        
+        padding: 1rem 2rem 1rem 1.5rem;
+        background: $gray-lightest;
+         @media screen and (max-width: $screen-sm) {
+            margin: 0;
+            padding:1rem 1.5rem;
+        }
+       
+
+        
+    }
+
+    &__title {
+        
+        color: $blue;
+        font-size: 15px;
+        line-height: 19.2px;
+        margin: 0;
+        margin-bottom: 5px;
+        @media (min-width:$screen-lg) and (max-width:$screen-xxl){
+            font-size: 12px;
+        
+          }
+        @media (min-width:$screen-lg){
+            margin-bottom: 10px;
+        }  
+        
+    }
+
+    &__description {
+        font-weight: $normal;
+        color: $black;
+        font-size: 15px;
+        line-height: 22.5px;
+        margin: 0;
+
+        a {
+            color: $blue;
+        }
+        @media (min-width:$screen-lg) and (max-width:$screen-xxl){
+            font-size: 12px;
+            line-height: 18px;
+          }
+    }
+}

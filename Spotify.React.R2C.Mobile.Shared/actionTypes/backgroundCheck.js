@@ -1,0 +1,20 @@
+export const submit_BACKGROUND_CHECK_UK_OrderNumber = "submit_BACKGROUND_CHECK_UK_OrderNumber"
+export const submit_BACKGROUND_CHECK_JM_OrderNumber = "submit_BACKGROUND_CHECK_JM_OrderNumber"
+export const submit_BACKGROUND_CHECK_UK_OrderNumber_Complete = "submit_BACKGROUND_CHECK_UK_OrderNumber_Complete"
+export const submit_BACKGROUND_CHECK_Country_OrderNumber_Complete = "submit_BACKGROUND_CHECK_UK_OrderNumber_Complete"
+export const submit_BACKGROUND_CHECK_UK_OrderNumber_Error = "submit_BACKGROUND_CHECK_UK_OrderNumber_Error"
+export const submit_BACKGROUND_CHECK_Country_OrderNumber_Error = "submit_BACKGROUND_CHECK_UK_OrderNumber_Error"
+
+export const generate_BACKGROUND_CHECK_US_Link = "generate_BACKGROUND_CHECK_US_Link"
+export const generate_BACKGROUND_CHECK_US_Link_Complete = "generate_BACKGROUND_CHECK_US_Link_Complete"
+export const generate_BACKGROUND_CHECK_US_Link_Error = "generate_BACKGROUND_CHECK_US_Link_Error"
+
+export const BACKGROUND_CHECK_GET_STATUS = "BACKGROUND_CHECK_GET_STATUS"
+export const BACKGROUND_CHECK_GET_STATUS_COMPLETE = "BACKGROUND_CHECK_GET_STATUS_COMPLETE"
+export const BACKGROUND_CHECK_GET_STATUS_ERROR = "BACKGROUND_CHECK_GET_STATUS_ERROR"
+
+
+export const GET_BGC_ORDER_ID = "GET_BGC_ORDER_ID"
+export const GET_BGC_ORDER_ID_SUCCESS = "GET_BGC_ORDER_ID_SUCCESS"
+export const GET_BGC_ORDER_ID_ERROR = "GET_BGC_ORDER_ID_ERROR"
+

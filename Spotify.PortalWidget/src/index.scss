@@ -1,0 +1,104 @@
+@import "~spotify-shared-web/assets/styles/typography";
+
+
+
+/*
+
+    Modal & tool-tip overrides cannot be inside of namespace since they are dynamically added to the dom
+*/
+.spotify-Modal.fade.modal.show {
+    opacity: 1 !important;
+    top: 25px !important;
+    padding: 0px !important;
+
+    .modal-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    form {
+        margin: 0px !important
+    }
+}
+
+.spotify-tooltip.fade.show {
+    opacity: 1 !important;
+}
+
+#PortalWidgetApp {
+    @import "~spotify-shared-web/assets/styles/variables";
+    //
+    //
+    @import "~spotify-shared-web/assets/styles/utilities";
+    //
+    @import "~spotify-shared-web/assets/vendor/bootstrap/bootstrap.scss";
+    @import "~spotify-shared-web/assets/vendor/bootstrap/bootstrap-reboot.scss";
+    //@import "~spotify-shared-web/assets/vendor/bootstrap/bootstrap-grid.scss";
+    @import "~spotify-shared-web/assets/styles/headings";
+    @import "~spotify-shared-web/assets/styles/assessment-state";
+    @import "~spotify-shared-web/assets/styles/badge";
+    @import "~spotify-shared-web/assets/styles/button";
+    @import "~spotify-shared-web/assets/styles/checkbox";
+    @import "~spotify-shared-web/assets/styles/containers";
+    @import "~spotify-shared-web/assets/styles/form-fields";
+    @import "~spotify-shared-web/assets/styles/lists-tables";
+    @import "~spotify-shared-web/assets/styles/messages";
+    @import "~spotify-shared-web/assets/styles/opportunity";
+    @import "~spotify-shared-web/assets/styles/program-board";
+    @import "~spotify-shared-web/assets/styles/progress-trackers";
+    @import "~spotify-shared-web/assets/styles/scrollbar";
+
+
+
+
+
+    * {
+        font-family: $font-family-base;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        src: local('Poppins-Medium'), local('Poppins-Medium'), url('./assets/fonts/Poppins-Medium.woff') format('woff'), url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+    }
+
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .link, a.link {
+        color: $spotify-blue;
+        text-decoration: underline;
+        background-color: transparent !important;
+        background-color: white;
+    }
+    /* 
+        fixes to adjust for portal
+
+    */
+    @media (min-width: 330px) {
+        .col-sm-12 {
+            flex: auto;
+        }
+    }
+
+
+    .btn-group button:last-child {
+        display: inline-block !important;
+        margin-left: 5px;
+    }
+    /* 
+        Overrides that casue conflict in portal
+
+    */
+    .tab-content {
+        overflow: inherit;
+    }
+
+    .table {
+        border-top: none;
+        border-bottom: none;
+        margin-bottom: inherit;
+    }
+}

@@ -1,0 +1,24 @@
+h1,
+h2 {
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+h1 {
+    color: $dark-gray;
+}
+
+h2,
+h3 {
+    color: $spotify-blue;
+}
+
+h4 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.form-text {
+    font-family: "Poppins";
+    font-size: 14px;
+}

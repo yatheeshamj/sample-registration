@@ -1,0 +1,97 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+
+
+.buttonValidationStyle{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    text-decoration-line: underline !important;
+    color: #00827E !important;
+    border: none;
+    background: none;
+}
+
+.containerDiv{
+  margin:auto;
+  margin-top: 71px;
+  text-align: center;
+  justify-content: space-between;
+}
+.form-container {
+  &__copy {
+    font-weight: $normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $newBlack;
+    margin: 0 0 20px;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 600;
+      font-style: normal;
+      //font-size: 15px;
+      //line-height: 22px;
+      color: #42414E;
+      //margin-bottom: 17px;
+    }
+    /*@media screen and (max-width: 1024px){
+      p{
+        margin-bottom: 6px;
+      }
+
+    }*/
+
+    button {
+      font-weight: normal;
+      font-style: normal;
+      //font-size: 15px;
+      //line-height: 22px;
+      height: 22px;
+      outline: none;
+      //color: $blue;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      text-decoration: underline;
+      letter-spacing: 0.4px;
+      cursor: pointer;
+    }
+  }
+  &__validation-text {
+    margin: 0 0 20px !important;
+  }
+}
+.edit-button{
+  color: #42414E;
+  @media screen and (max-width:$screen-sm) {
+    float: left;
+    
+  }
+}
+.resend-button {
+  color: #00827E;
+  @media screen and (max-width:$screen-sm) {
+    float: right;
+    
+  }
+}
+.btnStyle{
+ 
+  @media screen and (max-width:$screen-sm)
+  {flex-direction: row-reverse;}
+}
+.btnWrapper{
+  @media screen and (min-width:$screen-md) {
+    max-width: 265px !important;
+  }
+}

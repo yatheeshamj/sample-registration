@@ -1,0 +1,80 @@
+[
+  {
+    "outputFileName": "src/sagas/index.min.js",
+    "inputFiles": [
+      "src/sagas/index.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/index.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/index.js"
+    ]
+  },
+  {
+    "outputFileName": "src/reducers/index.min.js",
+    "inputFiles": [
+      "src/reducers/index.js"
+    ]
+  },
+  {
+    "outputFileName": "src/index.min.js",
+    "inputFiles": [
+      "src/index.js"
+    ]
+  },
+  {
+    "outputFileName": "src/components/opportunities/index.view.min.js",
+    "inputFiles": [
+      "src/components/opportunities/index.view.js"
+    ]
+  },
+  {
+    "outputFileName": "src/components/common/ModalWithForm.min.js",
+    "inputFiles": [
+      "src/components/common/ModalWithForm.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/reducers/opportunityBoard.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/reducers/opportunityBoard.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/sagas/opportunityBoard.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/sagas/opportunityBoard.js"
+    ]
+  },
+  {
+    "outputFileName": "src/components/opportunities/Filterbar/ActiveFiltersOverview.min.js",
+    "inputFiles": [
+      "src/components/opportunities/Filterbar/ActiveFiltersOverview.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/api/opportunities.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/api/opportunities.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/selectors/index.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/selectors/index.js"
+    ]
+  },
+  {
+    "outputFileName": "spotify.React.R2C.Mobile.Shared/selectors/agentProfile.min.js",
+    "inputFiles": [
+      "spotify.React.R2C.Mobile.Shared/selectors/agentProfile.js"
+    ]
+  },
+  {
+    "outputFileName": "src/reducers/RegistrationReducer.min.js",
+    "inputFiles": [
+      "src/reducers/RegistrationReducer.js"
+    ]
+  }
+]

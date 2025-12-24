@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+    <circle cx="8" cy="8" r="8" fill="#00827E"/>
+    <mask id="a" width="16" height="16" x="0" y="0" maskUnits="userSpaceOnUse">
+        <circle cx="8" cy="8" r="8" fill="#00827E"/>
+    </mask>
+    <g fill="#fff">
+        <path d="M3 7.785L5.174 5.61l4.664 4.664-2.174 2.174z"/>
+        <path d="M14.769 1l2.173 2.174-8.694 8.694-2.174-2.173z"/>
+    </g>
+</svg>

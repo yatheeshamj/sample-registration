@@ -1,0 +1,479 @@
+@import "../../../assets/styles/variables";
+
+.OpportunityCardWrapper {
+    display: flex;
+    height: 100%;
+    //width: 93.326%;
+    //  max-width: 400px;
+    //width: 23rem; //368px;
+
+    // @media screen and (max-width: 1600px) {
+    //     width: 16.375rem; //262px;
+    // }
+    // @media screen and (max-width: 1200px) {
+    //     width: 18.75rem; //300px;
+    // }
+    // @media screen and (max-width: 768px) and (min-width: 576px) {
+    //     width: 17.625rem; //282px;
+    // }
+    // @media screen and (max-width:576px) and (min-width:320px){
+    //     width: 23rem;
+    // }
+}
+
+.OpportunityCard {
+    display: flex;
+    flex-direction: column;
+    //box-shadow: $box-shadow;
+    border-radius: 4px;
+    border: 1px solid #dde3e4;
+    //padding: 24px;
+    @media screen and (max-width: $screen-sm) {
+        margin-bottom: 30px;
+    }
+}
+// .videoicon {
+//     width: 22px;
+//     height: 14px;
+//     margin: 16px 36px 15px 16px;
+//     @media screen and (max-width: 1600px) {
+//         width: 20.87px;
+//         height: 13.28px;
+//         margin: 9px 24px 9.72px 23.13px;
+//     }
+//     @media screen and (max-width: 1200px) {
+//         width: 21.61px;
+//         height: 14px;
+//         margin: 10px 25.39px;
+//     }
+//     @media screen and (max-width: 768px) and (min-width: 576px) {
+//         width: 20.87px;
+//         height: 13.28px;
+//         margin: 9px 24px 9.72px 23.32px;
+//     }
+// }
+// .infoicon {
+//     width: 19px;
+//     height: 19px;
+//     @media screen and (max-width: 1600px) {
+//         margin: 7px 25px 6.97px 24.97px;
+//         width: 18.03px;
+//         height: 18.03px;
+//     }
+//     @media screen and (max-width: 1200px) {
+//         margin: 8px 27px;
+//         width: 18px;
+//         height: 18px;
+//     }
+//     @media screen and (max-width: 768px) and (min-width: 576px) {
+//         margin: 7px 25px 6.97px 24.97px;
+//         width: 18.03px;
+//         height: 18.03px;
+//     }
+// }
+.OpportunityCardHeader {
+    //margin-top: 25px;
+    margin-top: 40px;
+}
+
+/*@media (min-width: $screen-md) {
+    .OpportunityCard {
+    }
+}*/
+
+.logo {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-container {
+    height: 250px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: RGB(83, 132, 193);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    /*	width: 250px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: RGB(83, 132, 193);
+}
+
+.servicetype {
+    border-width: 0px;
+    left: 0px;
+    top: 0px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 700;
+}
+
+div {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.learn-more{
+    font-size: 13px;
+    line-height: 19.44px;
+    @media screen and (max-width:$screen-xxl) {
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
+.label {
+    font-family: "Arial";
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    text-align: left;
+    padding-left: 10px !important;
+}
+
+.field {
+    font-family: "Arial";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+}
+
+/*** div table Start*/
+.divTable {
+    display: table;
+    width: 100%;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    border: none;
+    display: table-cell;
+    padding: 5px 5px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+/*** div table End*/
+
+.breakdown {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+// .OpportunityCard .col {
+// 	padding: 0px !important;
+// 	height:auto !important;
+// }
+
+.OpportunityCardBody {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 9px;
+    padding-right: 9px;
+    @media screen and (max-width: 1600px) {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    @media screen and (max-width: 1200px) {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+.OpportunityCardFooter {
+    background-color: #eaeff2;
+    //height: 144px;
+    //height: 225px;
+    //flex-direction: row;
+    //padding-top: 25px;
+    //padding-bottom: 25px;
+    // flex-wrap: wrap;
+    padding: 24px;
+    @media screen and (max-width: 1600px) {
+        padding: 12px 18px;
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 16px 29px 15px 29px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 12px 28px;
+    }
+}
+
+.InProgress .OpportunityCardFooter {
+    height: fit-content;
+}
+
+.monthlyrevenue {
+    flex: 0 0 100%;
+    // border:1px solid green;
+    /*text-transform: uppercase;
+    text-align: center;
+    white-space: pre-wrap;
+    font-weight: bold;
+    color: RGB(83, 132, 193);
+    height: 55px;*/
+}
+
+.sowhours {
+    flex: 0 0 100%;
+    text-align: center;
+    // border:1px solid pink;
+    /*text-align: center;
+    color: RGB(98, 115, 146);
+    font-weight: bold;
+    font-size: 14px;*/
+}
+
+.btn-icon-img {
+    color: white !important;
+
+    border-color: RGB(230, 234, 234) !important;
+    //padding-left: 10px !important;
+    //padding-right: 10px !important;
+}
+.cardbuttongrp {
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+.MediaWithSelect {
+    margin-right: auto;
+    margin-left: auto;
+    align-self: flex-end;
+    height: 45px;
+}
+
+.HasIncentive.important-text {
+    flex: 0 0 100%;
+    // text-align: center;
+    align-self: flex-end;
+}
+
+.MediaWithSelect .main .btn-primary {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-group button:last-child {
+    display: inline-block !important;
+    //margin-left: 4px;
+}
+
+.selectbtn {
+    margin-left: 20px;
+}
+
+.Button_primary__ZmQwo {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dayleft {
+    color: rgb(238, 135, 11);
+    font-weight: bold;
+}
+
+.incentives {
+    color: rgb(238, 135, 11);
+    font-weight: bold;
+    text-align: center;
+}
+
+div.monthlyrevenue p {
+    margin-top: 0px !important;
+    padding-top: 10px;
+}
+
+img.star {
+    border-width: 0px;
+    left: 0px;
+    top: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.programDetails {
+    text-align: center;
+}
+
+span.iconItem {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding-left: 15px;
+}
+
+img.programIcons {
+    border-width: 0px;
+    left: 0px;
+    top: 0px;
+    width: 36px;
+    height: 36px;
+}
+
+.caption {
+    display: block;
+}
+
+.programicongrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    //justify-content: flex-start;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    //  margin-bottom: 15px;
+}
+//.programicongrp .iconItem {
+
+//}
+.InProgressActions {
+    margin-top: 10px;
+    align-self: center;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.InProgressActions button,
+.InProgressActions a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.MuiSvgIcon-root {
+    font-size: 1.1rem !important;
+    color: #ffeee6 !important;
+}
+
+// .photoIcon {
+//     border-width: 0px;
+//     left: 0px;
+//     top: 0px;
+//     width: 18px;
+//     height: 20.08px;
+//     margin: 12px 38px 12.92px 38px;
+//     @media screen and (max-width: 1600px) {
+//         width: 16.47px;
+//         height: 18.38px;
+//         margin: 7px 26px 6.62px 25.52px;
+//     }
+//     @media screen and (max-width: 1200px) {
+//         width: 17px;
+//         height: 18.96px;
+//         margin: 8px 27px 7.04px 28px;
+//     }
+//     @media screen and (max-width: 768px) and (min-width: 576px) {
+//         width: 16.47px;
+//         height: 18.38px;
+//         margin: 7px 25.52px 6.62px 25.52px;
+//     }
+// }
+
+.alert {
+    color: rgb(238, 135, 11);
+    font-weight: bold;
+    text-align: center !important;
+    font-size: 16px;
+}
+
+small {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19.44px;
+}
+.btn-group {
+    border-radius: 4px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+// .btnNew {
+//     height: 45px;
+//     width: 94px;
+//     @media screen and (max-width: 1600px) {
+//        // height: 32px;
+//         width: 68px;
+//     }
+//     // @media screen and (max-width: 1200px) {
+//     //     height: 34px;
+//     //     width: 72px;
+//     // }
+//     // @media screen and (max-width: 768px) and (min-width: 576px) {
+//     //     width: 68px;
+//     //     height: 32px;
+//     // }
+// }
+
+/*.btn-first-row{
+    width:65px;    
+}
+.btn-first-row-first{
+ margin-right: 5px;
+}
+.btn-first-row-second{
+margin-left: 10px;
+margin-right: 10px;
+}
+.btn-first-row-third{
+
+
+
+}*/
+@media screen and (max-width:$screen-md) {
+    .OpportunityCardWrapper{
+        margin-right: 16px;
+    }
+}
+@media screen and (max-width:$screen-sm) {
+    .OpportunityCardWrapper{
+        margin-right: 16px;
+    }
+}
+
+.BGC{
+    font-size: 13px;
+    margin:5px 0px;
+}

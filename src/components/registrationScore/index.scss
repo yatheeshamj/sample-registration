@@ -1,0 +1,70 @@
+.registration-container {
+  font-family: Poppins, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.registration-header {
+  font-size: 28px;
+  color: #2b7a78;
+  text-align: left;
+}
+
+
+.registration-info {
+  font-size: 14px;
+  margin: 0;
+  line-height: 16px;
+  
+}
+
+.user-info {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.score-header {
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  color: #00827e;
+}
+
+.score-breakdown {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 25px 0 25px 25px;
+  width: 40%;
+  background-color: #eaeff2;
+}
+
+.footer-message {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tooltip{
+  font-size: 10px;
+}
+.tooltip-icon{
+ width: 14px;
+ height: 14px;
+ fill: #00827e; 
+}
+
+.tooltip-inner{
+  background-color: #EAEFF2;
+  color: #717073;
+}
+
+.tooltip-arrow {
+    background-color: #EAEFF2;
+  }
+
+.score-breakdown {
+  .tooltip-inner{
+    background-color: #EAEFF2;
+    color: #717073;
+    border: 1px solid #EAEFF2;
+  }
+}

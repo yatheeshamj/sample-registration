@@ -1,0 +1,14 @@
+@import '~spotify-shared-web/assets/styles/variables';
+@import '~spotify-shared-web/assets/styles/forms';
+
+.ssn-inputs-wrapper,
+.firstname-inputs-wrapper,
+.lastname-inputs-wrapper,
+.ssn-confirm-inputs-wrapper {
+  margin-bottom: 16px;
+  height: 40px;
+  
+}
+.ssn-confirm-inputs-wrapper{
+  margin-bottom: 32px;
+}

@@ -1,0 +1,46 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.col-skip{
+    @media (min-width:$screen-md) and (max-width:$screen-lg){
+        margin: 0 8.33%;
+    }
+}
+  .DashboardTabs {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+
+.DashboardTabs > .nav-item{
+    margin-left:15px
+}
+
+.DashboardTabs > .nav-item {
+   // border-color: #dee2e6 #dee2e6 #fff;
+   font-family:$btn-font-family ;
+}
+.DashboardTabs > .nav-item.active {
+    background-color: #EAEFF2;
+    border-bottom: 3px solid #00827e;
+}
+
+@media (max-width: 420px) {
+    .DashboardTabs > .nav-item {
+       font-size:16px;
+       margin-left:10px;
+    }
+    .nav-tabs .nav-item:not(:last-child) {
+         margin-right: 5px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .DashboardTabs > .nav-item {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    .nav-tabs .nav-item:not(:last-child) {
+        margin-right: 0px;
+    }
+}

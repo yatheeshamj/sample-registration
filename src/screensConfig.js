@@ -1,0 +1,31 @@
+let screenConfig = {
+    header: "header",
+    footer: "footer",
+    contactValidation: "contactValidation",
+    registrationPcScan: "registrationPcScan",
+    registrationAssesment: "registrationAssesment",
+    registrationEducation: "registrationEducation",
+    waitlistScreen:"waitlistScreen",
+    registrationPending: "registrationPending",
+    selectYourContractorType: "selectYourContractorType",
+    uniqueIdentification: "uniqueIdentification",
+    registerAsSoleProprietor: "registerAsSoleProprietor",
+    registerYourCompany: "registerYourCompany",
+    registerAsServicePartner: "registerAsServicePartner",
+    confirmRestartAgentModal: "confirmRestartAgentModal",
+    otherRegistration: "otherRegistration",
+    signDocuments: "signDocuments",
+    agreementPage: "agreementPage",
+    agreementContainer: "agreementContainer",
+    preferences: "preferences",
+    assessment: "assessment",
+    opportunities: "opportunities",
+    opportunitiesCard: "opportunitiesCard",
+    opportunitiesDetails: "opportunitiesDetails",
+    cancelEnrollment: "cancelEnrollment",
+    opportunityTypes: "opportunityTypes",
+    payment: "payment",
+    logout: "logout"
+}
+
+export default screenConfig;

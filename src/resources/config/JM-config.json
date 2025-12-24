@@ -1,0 +1,1123 @@
+{
+    "registrationScreen": {
+        "email": {
+            "required": true,
+            "label": {
+                "labelKey": "registration.email.label.value",
+                "placeholderKey": "registration.email.label.placeholder"
+            },
+            "validation": {
+                "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.([a-zA-Z]{2,4})$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "registration.email.messages.requiredMessage",
+                "alreadyExistsKey": "registration.email.messages.alreadyExistsMessage",
+                "invalidKey": "registration.email.messages.invalidMessage"
+            },
+            "display": true,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "username": {
+            "required": true,
+            "label": {
+                "labelKey": "registration.username.label.value",
+                "placeholderKey": "registration.username.label.placeholder"
+            },
+            "validation": {
+                "pattern": "[a-zA-Z0-9_]+"
+            },
+            "messageKey": {
+                "requiredMessageKey": "registration.username.messages.requiredMessage",
+                "alreadyExistsKey": "registration.username.messages.alreadyExistsMessage",
+                "invalidKey": "registration.username.messages.invalidMessage"
+            },
+            "display": true,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "password": {
+            "required": true,
+            "label": {
+                "labelKey": "registration.password.label.value",
+                "placeholderKey": "registration.password.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "registration.password.messages.requiredMessage",
+                "invalidKey": "registration.password.messages.invalidMessage"
+            },
+            "display": true,
+            "inputType": "password",
+            "disabled": false,
+            "style": "none"
+        },
+        "getStartedButton": {
+            "required": false,
+            "label": {
+                "labelKey": "registration.getStartedButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        }
+    },
+    "loginScreen": {
+        "username": {
+            "required": true,
+            "label": {
+                "labelKey": "login.username.label.value",
+                "placeholderKey": "login.username.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "login.username.messages.requiredMessage"
+            },
+            "display": true,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "password": {
+            "required": true,
+            "label": {
+                "labelKey": "login.password.label.value",
+                "placeholderKey": "login.password.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "login.password.messages.requiredMessage"
+            },
+            "display": true,
+            "inputType": "password",
+            "disabled": false,
+            "style": "none"
+        },
+        "logInButton": {
+            "required": false,
+            "label": {
+                "labelKey": "login.logInButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        }
+    },
+    "basicInformationScreen": {
+        "firstName": {
+            "label": {
+                "labelKey": "basicInformation.firstName.label.value",
+                "placeholderKey": "basicInformation.firstName.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,20}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.firstName.messages.requiredMessage",
+                "invalidKey": "basicInformation.firstName.messages.invalidKeyMessage"
+            },
+            "required": true,
+            "display": true,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "surName": {
+            "label": {
+                "labelKey": "basicInformation.surName.label.value",
+                "placeholderKey": "basicInformation.surName.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,20}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.surName.messages.requiredMessage",
+                "invalidKey": "basicInformation.surName.messages.invalidKeyMessage"
+            },
+            "required": false,
+            "display": false,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "middleInitial": {
+            "label": {
+                "labelKey": "basicInformation.middleInitial.label.value",
+                "placeholderKey": "basicInformation.middleInitial.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,20}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.middleInitial.messages.requiredMessage",
+                "invalidKey": "basicInformation.middleInitial.messages.invalidKeyMessage"
+            },
+            "required": false,
+            "display": false,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "lastName": {
+            "label": {
+                "labelKey": "basicInformation.lastName.label.value",
+                "placeholderKey": "basicInformation.lastName.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,20}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.lastName.messages.requiredMessage",
+                "invalidKey": "basicInformation.lastName.messages.invalidKeyMessage"
+            },
+            "required": true,
+            "display": true,
+            "inputType": "text",
+            "disabled": false,
+            "style": "none"
+        },
+        "dateOfBirth": {
+            "label": {
+                "labelKey": "basicInformation.dateOfBirth.label.value",
+                "placeholderKey": "basicInformation.dateOfBirth.label.placeholder"
+            },
+            "validation": {
+                "pattern": "MM/dd/yyyy"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.dateOfBirth.messages.requiredMessage"
+            },
+            "inputType": "datePicker",
+            "required": true,
+            "display": true,
+            "disabled": false,
+            "style": "none"
+        },
+        "language": {
+            "label": {
+                "labelKey": "basicInformation.language.label.value",
+                "placeholderKey": "basicInformation.language.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "basicInformation.language.messages.requiredMessage"
+            },
+            "inputType": "select",
+            "required": true,
+            "display": true,
+            "disabled": false,
+            "style": "none"
+        },
+        "nextButton": {
+            "required": false,
+            "label": {
+                "labelKey": "basicInformation.nextButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        }
+    },
+    "referralScreen": {
+        "referralCode": {
+            "label": {
+                "labelKey": "referral.referralCode.label.value",
+                "placeholderKey": "referral.referralCode.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^\\D*(\\d\\D*){1,10}$"
+            },
+            "required": false,
+            "display": true,
+            "inputType": "number",
+            "disabled": false,
+            "style": "none"
+        },
+        "noReferralButton": {
+            "required": false,
+            "label": {
+                "labelKey": "referral.noReferralButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "backButton": {
+            "required": false,
+            "label": {
+                "labelKey": "referral.backButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "nextButton": {
+            "required": false,
+            "label": {
+                "labelKey": "referral.nextButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        }
+    },
+    "contactDetailsScreen": {
+        "country": {
+            "label": {
+                "labelKey": "contactDetails.country.label.value",
+                "placeholderKey": "contactDetails.country.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.country.messages.requiredMessage"
+            },
+            "disabled": true,
+            "required": true,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "addressLine1": {
+            "label": {
+                "labelKey": "contactDetails.addressLine1.label.value",
+                "placeholderKey": "contactDetails.addressLine1.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,250}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.addressLine1.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "addressLine2": {
+            "label": {
+                "labelKey": "contactDetails.addressLine2.label.value",
+                "placeholderKey": "contactDetails.addressLine2.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,250}$"
+            },
+            "required": false,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "city": {
+            "label": {
+                "labelKey": "contactDetails.city.label.value",
+                "placeholderKey": "contactDetails.city.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,80}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.city.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "state": {
+            "label": {
+                "labelKey": "contactDetails.state.label.value",
+                "placeholderKey": "contactDetails.state.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.state.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": true,
+            "inputType": "text",
+            "display": true,
+            "style": "none"
+        },
+        "zipCode": {
+            "label": {
+                "labelKey": "contactDetails.zipCode.label.value",
+                "placeholderKey": "contactDetails.zipCode.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^\\d{5}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.zipCode.messages.requiredMessage",
+                "invalidKey": "contactDetails.zipCode.messages.invalidMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "inputType": "number",
+            "display": true,
+            "style": "none"
+        },
+        "mobileNumber": {
+            "label": {
+                "labelKey": "contactDetails.mobileNumber.label.value",
+                "placeholderKey": "contactDetails.mobileNumber.label.placeholder"
+            },
+            "validation": {
+                "pattern": "\\b(?:\\+1\\s*|1\\s*|\\()?\\d{3}(?:\\)?[-.\\s]*)?\\d{3}[-.\\s]*\\d{4}\\b"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.mobileNumber.messages.requiredMessage",
+                "invalidKey": "contactDetails.mobileNumber.messages.invalidMessage",
+                "alreadyExistsKey": "contactDetails.mobileNumber.messages.alreadyExistsMessage"
+            },
+            "required": true,
+            "inputType": "tel",
+            "disabled": false,
+            "display": true,
+            "style": "none"
+        },
+        "backButton": {
+            "required": false,
+            "label": {
+                "labelKey": "contactDetails.backButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "nextButton": {
+            "required": false,
+            "label": {
+                "labelKey": "contactDetails.nextButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "greeting": {
+            "continueButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "contactDetails.greeting.continueButton.label.value"
+                },
+                "display": true,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            }
+        },
+        "display": true
+    },
+    "secondaryContactDetailsScreen": {
+        "country": {
+            "label": {
+                "labelKey": "contactDetails.country.label.value",
+                "placeholderKey": "contactDetails.country.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.country.messages.requiredMessage"
+            },
+            "disabled": true,
+            "required": true,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "addressLine1": {
+            "label": {
+                "labelKey": "contactDetails.addressLine1.label.value",
+                "placeholderKey": "contactDetails.addressLine1.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,250}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.addressLine1.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "addressLine2": {
+            "label": {
+                "labelKey": "contactDetails.addressLine2.label.value",
+                "placeholderKey": "contactDetails.addressLine2.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,250}$"
+            },
+            "required": false,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "city": {
+            "label": {
+                "labelKey": "contactDetails.city.label.value",
+                "placeholderKey": "contactDetails.city.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^.{1,80}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.city.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "inputType": "text",
+            "style": "none"
+        },
+        "state": {
+            "label": {
+                "labelKey": "contactDetails.state.label.value",
+                "placeholderKey": "contactDetails.state.label.placeholder"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.state.messages.requiredMessage"
+            },
+            "required": true,
+            "disabled": true,
+            "inputType": "text",
+            "display": true,
+            "style": "none"
+        },
+        "zipCode": {
+            "label": {
+                "labelKey": "contactDetails.zipCode.label.value",
+                "placeholderKey": "contactDetails.zipCode.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^\\d{5}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.zipCode.messages.requiredMessage",
+                "invalidKey": "contactDetails.zipCode.messages.invalidMessage"
+            },
+            "required": true,
+            "disabled": false,
+            "inputType": "number",
+            "display": true,
+            "style": "none"
+        },
+        "mobileNumber": {
+            "label": {
+                "labelKey": "contactDetails.mobileNumber.label.value",
+                "placeholderKey": "contactDetails.mobileNumber.label.placeholder"
+            },
+            "validation": {
+                "pattern": "\\b(?:\\+1\\s*|1\\s*|\\()?\\d{3}(?:\\)?[-.\\s]*)?\\d{3}[-.\\s]*\\d{4}\\b"
+            },
+            "messageKey": {
+                "requiredMessageKey": "contactDetails.mobileNumber.messages.requiredMessage",
+                "invalidKey": "contactDetails.mobileNumber.messages.invalidMessage",
+                "alreadyExistsKey": "contactDetails.mobileNumber.messages.alreadyExistsMessage"
+            },
+            "required": true,
+            "inputType": "tel",
+            "disabled": false,
+            "display": true,
+            "style": "none"
+        },
+        "backButton": {
+            "required": false,
+            "label": {
+                "labelKey": "contactDetails.backButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "nextButton": {
+            "required": false,
+            "label": {
+                "labelKey": "contactDetails.nextButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "greeting": {
+            "continueButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "contactDetails.greeting.continueButton.label.value"
+                },
+                "display": true,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            }
+        },
+        "display": false
+    },
+    "phonenumberValidationScreen": {
+        "phoneNumberFormat": {
+            "validation": {
+                "pattern": "(876|658)(\\d{3})(\\d{4})$",
+                "format": "$1-$2-$3",
+                "editNumberFormat": "###-###-####",
+                "length": 10,
+                "display": true
+            }
+        },
+        "phoneNumberOTP": {
+            "label": {
+                "labelKey": "phonenumberValidation.phoneNumberOTP.label.value",
+                "placeholderKey": "phonenumberValidation.phoneNumberOTP.label.placeholder"
+            },
+            "validation": {
+                "pattern": "^\\d{6}$"
+            },
+            "messageKey": {
+                "requiredMessageKey": "phonenumberValidation.phoneNumberOTP.messages.requiredMessage",
+                "invalidKey": "phonenumberValidation.phoneNumberOTP.messages.invalidMessage"
+            },
+            "inputType": "text",
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "style": "none"
+        },
+        "nextButton": {
+            "required": false,
+            "label": {
+                "labelKey": "phonenumberValidation.nextButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "resendCodeButton": {
+            "required": false,
+            "label": {
+                "labelKey": "phonenumberValidation.resendCodeButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "editNumberButton": {
+            "required": false,
+            "label": {
+                "labelKey": "phonenumberValidation.editNumberButton.label.value"
+            },
+            "display": true,
+            "inputType": "button",
+            "disabled": false,
+            "style": "none"
+        },
+        "agreement": {
+            "required": true,
+            "label": {
+                "labelKey": "phonenumberValidation.agreement.label.value"
+            },
+            "messageKey": {
+                "requiredMessageKey": "phonenumberValidation.agreement.messages.requiredMessage"
+            },
+            "display": true,
+            "inputType": "checkbox",
+            "disabled": false,
+            "style": "none"
+        }
+    },
+    "roleRegistrationScreen": {
+        "soleProprietorScreen": {
+            "verifyIdentity": {
+                "fields": {
+                    "nameFields": {
+                        "firstName": {
+                            "key": "firstName",
+                            "disabled": true,
+                            "display": true,
+                            "inputType": "text",
+                            "required": true,
+                            "style": "none"
+                        },
+                        "middleInitial": {
+                            "key": "middleInitial",
+                            "disabled": true,
+                            "display": false,
+                            "inputType": "text",
+                            "required": false,
+                            "style": "none"
+                        },
+                        "lastName": {
+                            "key": "lastName",
+                            "disabled": true,
+                            "display": true,
+                            "inputType": "text",
+                            "required": true,
+                            "style": "none"
+                        }
+                    },
+                    "individualTaxIdConsentCheckBox": {
+                        "required": false,
+                        "display": false,
+                        "inputType": "checkbox",
+                        "disabled": false,
+                        "showModal": true
+                    },
+                    "uniqueNumber": {
+                        "uniqueIdVerification": "OFF",
+                        "validation": {
+                            "patternType": "^[0-9a-zA-Z]*$",
+                            "pattern": "^(?!000)(?!666)(?!9)[0-1][0-9]{2}[- ]?[0-9]{2}[- ]?(?!0000)[0-9]{4}$"
+                        },
+                        "verification": {
+                            "submitAPI": "agentssns/agents/${agentId}/ssns/${uniqueIdentity}/countryId/${countryId}?firstName=${firstName}&lastName=${lastName}",
+                            "duplicateAPI": "ssnunique/ssns/${uniqueID}"
+                        },
+                        "inputType": "password",
+                        "disabled": false,
+                        "required": true,
+                        "length": 9,
+                        "display": true
+                    },
+                    "confirmUniqueNumber": {
+                        "validation": {
+                            "pattern": "^(?!000)(?!666)(?!9)[0-1][0-9]{2}[- ]?[0-9]{2}[- ]?(?!0000)[0-9]{4}$"
+                        },
+                        "inputType": "password",
+                        "disabled": false,
+                        "required": true,
+                        "display": true
+                    },
+                    "secondaryUniqueNumber": {
+                        "label": {
+                            "labelKey": "secondaryUniqueNumber.label.value",
+                            "placeholderKey": "secondaryUniqueNumber.label.placeholder"
+                        },
+                        "validation": {
+                            "pattern": "^\\d{9}$"
+                        },
+                        "verification": {
+                            "externalAPI": "https://aAPIWhichVerifiesSecondaryUniqueNumber"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "secondaryUniqueNumber.messages.requiredMessage",
+                            "invalidKey": "secondaryUniqueNumber.messages.invalidMessage"
+                        },
+                        "inputType": "password",
+                        "disabled": false,
+                        "required": false,
+                        "display": false,
+                        "style": "none"
+                    },
+                    "confirmSecondaryUniqueNumber": {
+                        "label": {
+                            "labelKey": "confirmSecondaryUniqueNumber.label.value",
+                            "placeholderKey": "confirmSecondaryUniqueNumber.label.placeholder"
+                        },
+                        "validation": {
+                            "pattern": "^\\d{9}$"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "confirmSecondaryUniqueNumber.messages.requiredMessage",
+                            "invalidKey": "confirmSecondaryUniqueNumber.messages.invalidMessage"
+                        },
+                        "inputType": "password",
+                        "disabled": false,
+                        "required": false,
+                        "display": false,
+                        "style": "none"
+                    },
+                    "nextButton": {
+                        "required": false,
+                        "label": {
+                            "labelKey": "roleRegistration.personalDetails.nextButton.label.value"
+                        },
+                        "display": true,
+                        "inputType": "button",
+                        "disabled": false,
+                        "style": "none"
+                    },
+                    "editNameButton": {
+                        "required": false,
+                        "label": {
+                            "labelKey": "roleRegistration.personalDetails.editNameButton.label.value"
+                        },
+                        "display": true,
+                        "inputType": "button",
+                        "disabled": false,
+                        "style": "none"
+                    },
+                    "display": true
+                }
+            },
+            "stepDescriptions": [
+                "Enter Tax Registration Number",
+                "Register Sole Proprietorship",
+                "Sign Documents",
+                "Finalize Registration"
+            ],
+            "businessInfo": {},
+            "signAgreements": {},
+            "display": true,
+            "nextButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "roleRegistration.soleProprietor.nextButton.label.value"
+                },
+                "display": true,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            },
+            "changeContractorTypeButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "roleRegistration.soleProprietor.changeContractorTypeButton.label.value"
+                },
+                "display": false,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            }
+        },
+        "companyRegistrationScreen": {
+            "companyDetails": {
+                "companyName": {
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.companyName.label.value",
+                        "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyName.label.placeholder"
+                    },
+                    "validation": {
+                        "pattern": "^.+ Inn$"
+                    },
+                    "messageKey": {
+                        "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyName.messages.requiredMessage",
+                        "invalidKey": "roleRegistration.companyRegistration.companyDetails.companyName.messages.invalidMessage"
+                    },
+                    "required": true,
+                    "display": true,
+                    "inputType": "text",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "companyTaxIdNumber": {
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.companyTaxIdNumber.label.value",
+                        "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyTaxIdNumberlabel.placeholder"
+                    },
+                    "validation": {
+                        "pattern": "^\\d{9}$"
+                    },
+                    "messageKey": {
+                        "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyTaxIdNumber.messages.requiredMessage",
+                        "alreadyExistsKey": "roleRegistration.companyRegistration.companyDetails.companyTaxIdNumber.messages.alreadyExistsMessage",
+                        "invalidKey": "roleRegistration.companyRegistration.companyDetails.companyTaxIdNumber.messages.invalidMessage"
+                    },
+                    "required": true,
+                    "display": true,
+                    "inputType": "password",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "typeOfIncorporation": {
+                    "required": false,
+                    "display": false,
+                    "inputType": true,
+                    "disabled": false,
+                    "label": {
+                        "Company": "Domestic Corporation",
+                        "Individual": "One Person Company",
+                        "PartnerShip": "Partnership"
+                    }
+                },
+                "stateOfIncorporation": {
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.stateOfIncorporation.label.value",
+                        "placeholderKey": "roleRegistration.companyRegistration.companyDetails.stateOfIncorporation.label.placeholder"
+                    },
+                    "messageKey": {
+                        "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.stateOfIncorporation.messages.requiredMessage"
+                    },
+                    "required": true,
+                    "display": true,
+                    "inputType": "dropdown",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "yourTitle": {
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.yourTitle.label.value",
+                        "placeholderKey": "roleRegistration.companyRegistration.companyDetails.yourTitle.label.placeholder"
+                    },
+                    "messageKey": {
+                        "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.yourTitle.messages.requiredMessage"
+                    },
+                    "required": true,
+                    "display": true,
+                    "inputType": "dropdown",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "companyId": {
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.companyId.label.value",
+                        "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyId.label.placeholder"
+                    },
+                    "validation": {
+                        "pattern": "^\\d{2}-\\d{7}$"
+                    },
+                    "messageKey": {
+                        "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyId.messages.requiredMessage"
+                    },
+                    "required": false,
+                    "display": false,
+                    "inputType": "number",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "primaryPurpose": {
+                    "required": false,
+                    "display": false,
+                    "inputType": true,
+                    "disabled": false
+                },
+                "companyContactInformation": {
+                    "companyEmail": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.companyEmail.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.companyEmail.label.placeholder"
+                        },
+                        "validation": {
+                            "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.([a-zA-Z]{2,4})$"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.companyEmail.messages.requiredMessage",
+                            "invalidKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.companyEmail.messages.invalidMessage"
+                        },
+                        "required": true,
+                        "display": true,
+                        "inputType": "text",
+                        "disabled": false,
+                        "style": "none"
+                    },
+                    "primaryPhone": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.primaryPhone.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.primaryPhone.label.placeholder"
+                        },
+                        "validation": {
+                            "pattern": "\\b(?:\\+1\\s*|1\\s*|\\()?\\d{3}(?:\\)?[-.\\s]*)?\\d{3}[-.\\s]*\\d{4}\\b"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.primaryPhone.messages.requiredMessage",
+                            "invalidKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.primaryPhone.messages.invalidMessage"
+                        },
+                        "required": true,
+                        "display": true,
+                        "inputType": "tel",
+                        "disabled": false,
+                        "style": "none"
+                    },
+                    "addressLine1": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine1.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine1.label.placeholder"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine1.messages.requiredMessage"
+                        },
+                        "required": true,
+                        "disabled": false,
+                        "display": true,
+                        "inputType": "text",
+                        "style": "none"
+                    },
+                    "addressLine2": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine2.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine2.label.placeholder"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.addressLine2.messages.requiredMessage"
+                        },
+                        "required": false,
+                        "disabled": false,
+                        "display": true,
+                        "inputType": "text",
+                        "style": "none"
+                    },
+                    "city": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.city.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.city.label.placeholder"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.city.messages.requiredMessage"
+                        },
+                        "required": true,
+                        "display": true,
+                        "disabled": false,
+                        "inputType": "text",
+                        "style": "none"
+                    },
+                    "state": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.state.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.state.label.placeholder"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.state.messages.requiredMessage"
+                        },
+                        "required": true,
+                        "display": true,
+                        "disabled": false,
+                        "inputType": "dropdown",
+                        "style": "none"
+                    },
+                    "zipCode": {
+                        "label": {
+                            "labelKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.zipCode.label.value",
+                            "placeholderKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.zipCode.label.placeholder"
+                        },
+                        "validation": {
+                            "pattern": "^\\d{5}$"
+                        },
+                        "messageKey": {
+                            "requiredMessageKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.zipCode.messages.requiredMessage",
+                            "invalidKey": "roleRegistration.companyRegistration.companyDetails.companyContactInformation.zipCode.messages.invalidMessage"
+                        },
+                        "required": true,
+                        "display": true,
+                        "disabled": false,
+                        "inputType": "number",
+                        "style": "none"
+                    }
+                },
+                "nextButton": {
+                    "required": false,
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.nextButton.label.value"
+                    },
+                    "display": true,
+                    "inputType": "button",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "changeContractorTypeButton": {
+                    "required": false,
+                    "label": {
+                        "labelKey": "roleRegistration.companyRegistration.companyDetails.changeContractorTypeButton.label.value"
+                    },
+                    "display": false,
+                    "inputType": "button",
+                    "disabled": false,
+                    "style": "none"
+                },
+                "display": true
+            },
+            "display": false
+        },
+        "servicePartnerScreen": {
+            "showPersonalDetails": true,
+            "signDocuments": true,
+            "searchByTaxId": {
+                "label": {
+                    "labelKey": "roleRegistration.servicePartner.searchByTaxId.label.value",
+                    "placeholderKey": "roleRegistration.servicePartner.searchByTaxId.label.placeholder"
+                },
+                "messageKey": {
+                    "invalidMessage": "roleRegistration.servicePartner.searchByTaxId.messages.invalidMessage"
+                },
+                "required": false,
+                "inputType": "number",
+                "display": true,
+                "disabled": false,
+                "style": "none"
+            },
+            "searchByBusinessIdButton": {
+                "label": {
+                    "labelKey": "roleRegistration.servicePartner.searchByBusinessIdButton.label.value"
+                },
+                "required": false,
+                "display": true,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            },
+            "searchByServicePartnerId": {
+                "label": {
+                    "labelKey": "roleRegistration.servicePartner.searchByServicePartnerId.label.value",
+                    "placeholderKey": "roleRegistration.servicePartner.searchByServicePartnerId.label.placeholder"
+                },
+                "messageKey": {
+                    "invalidMessage": "roleRegistration.servicePartner.searchByServicePartnerId.messages.invalidMessage"
+                },
+                "required": false,
+                "inputType": "number",
+                "display": true,
+                "disabled": false,
+                "style": "none"
+            },
+            "searchByServicePartnerIdButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "roleRegistration.servicePartner.searchByServicePartnerIdButton.label.value"
+                },
+                "display": true,
+                "inputType": "button",
+                "disabled": false,
+                "style": "none"
+            },
+            "viewListButton": {
+                "required": false,
+                "label": {
+                    "labelKey": "roleRegistration.servicePartner.viewListButton.label.value"
+                },
+                "inputType": "button",
+                "disabled": false,
+                "style": "none",
+                "display": true
+            },
+            "display": true
+        },
+        "display": false
+    },
+    "opportunitiesScreen": {
+        "completeAssessmentButton": {
+            "required": false,
+            "label": {
+                "labelKey": "Opportunities.completeAssessmentButton.label.value"
+            },
+            "inputType": "button",
+            "disabled": false,
+            "style": "none",
+            "display": true
+        }
+    },
+    "footer": {
+        "contactUs": {
+            "viaEmail": {
+                "display": true
+            },
+            "viaPhone": {
+                "display": false
+            }
+        }
+    },
+    "waitlistScreen": {
+        "display": false
+    },
+    "PeakSeason": {
+        "applied": false
+    }
+}

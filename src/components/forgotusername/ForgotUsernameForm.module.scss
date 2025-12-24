@@ -1,0 +1,17 @@
+@import '~spotify-shared-web/assets/styles/variables';
+@import '~spotify-shared-web/assets/styles/forms';
+
+.email-inputs-wrapper {
+  margin-bottom: 32px;
+}
+
+.submit-wrapper {
+  margin-bottom: 24px;
+  button {
+    float: right;
+  }
+}
+
+.recaptcha-wrapper {
+  margin-bottom: 32px;
+}

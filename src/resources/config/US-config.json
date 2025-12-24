@@ -1,0 +1,362 @@
+{
+  "phonenumberValidationScreen": {
+    "phoneNumberFormat": {
+      "validation": {
+        "pattern": "^([2-9][0-9]{2})([0-9]{3})([0-9]{4})$",
+        "format": "($1) $2-$3",
+        "editNumberFormat": "(###) ###-####",
+        "length": 10,
+        "required": true,
+        "display": true
+      }
+    }
+  },
+  "roleRegistrationScreen": {
+    "soleProprietorScreen": {
+      "verifyIdentity": {
+        "fields": {
+          "nameFields": {
+            "firstName": {
+              "key": "firstName",
+              "disabled": true,
+              "display": true,
+              "inputType": "text",
+              "required": true
+            },
+            "middleInitial": {
+              "key": "middleInitial",
+              "disabled": true,
+              "display": false,
+              "inputType": "text",
+              "required": false
+            },
+            "lastName": {
+              "key": "lastName",
+              "disabled": true,
+              "display": true,
+              "inputType": "text",
+              "required": true
+            }
+          },
+          "uniqueNumber": {
+            "uniqueIdVerification": "TIN",
+            "validation": {
+              "patternType": "(^[0-9]*$)",
+              "pattern": "^\\d{9}$"
+            },
+            "verification": {
+              "submitAPI": "agentssns/agents/${agentId}/ssns/${uniqueIdentity}/countryId/${countryId}?firstName=${firstName}&lastName=${lastName}",
+              "duplicateAPI": "ssnunique/ssns/${uniqueID}"
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": true,
+            "length": 9,
+            "display": true
+          },
+          "confirmUniqueNumber": {
+            "validation": {
+              "pattern": "^\\d{9}$"
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": true,
+            "display": true
+          },
+          "secondaryUniqueNumber": {
+            "validation": {
+              "patternType": "",
+              "pattern": ""
+            },
+            "verification": {
+              "submitAPI": ""
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": false,
+            "length": 0,
+            "display": false
+          },
+          "confirmSecondaryUniqueNumber": {
+            "validation": {
+              "pattern": ""
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": false,
+            "display": false
+          },
+          "individualTaxIdConsentCheckBox": {
+            "required": false,
+            "display": false,
+            "inputType": "checkbox",
+            "disabled": false,
+            "showModal": false
+          },
+          "individualTaxIdNumber": {
+            "validation": {
+              "patternType": "",
+              "pattern": ""
+            },
+            "verification": {
+              "submitAPI": ""
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": false,
+            "length": 0,
+            "display": false
+          },
+          "confirmIndividualTaxIdNumber": {
+            "validation": {
+              "pattern": ""
+            },
+            "inputType": "password",
+            "disabled": false,
+            "required": false,
+            "display": false
+          }
+        }
+      },
+      "display": true,
+      "admissionStepId": 5
+    },
+    "companyRegistrationScreen": {
+      "companyDetails": {
+        "companyName": {
+          "validation": {
+            "pattern": "^.+\\s*(llc|l.l.c.|limited liability company|inc|inc.|incorporated|corp|corp.|corporation|co|co.|company)\\s*$"
+          },
+          "required": true,
+          "display": true,
+          "inputType": "string",
+          "disabled": false
+        },
+        "businessId": {
+          "businessIdVerification": "TIN",
+          "validation": {
+            "patternType": "^[0-9]*$",
+            "pattern": "^\\d{9}$"
+          },
+          "required": true,
+          "display": true,
+          "inputType": "password",
+          "length": 9,
+          "disabled": false
+        },
+        "taxId": {
+          "taxIdVerification": "N/A",
+          "validation": {
+            "patternType": "",
+            "pattern": ""
+          },
+          "required": false,
+          "display": false,
+          "inputType": "password",
+          "length": 0,
+          "disabled": false
+        },
+        "typeOfIncorporation": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false,
+          "label": {
+            "Company": "Domestic Corporation",
+            "Individual": "One Person Company",
+            "PartnerShip": "Partnership"
+          }
+        },
+        "taxProgram": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false,
+          "programId": [
+            "NA",
+            "RT0001",
+            "RT0002",
+            "RT0003",
+            "RT0004"
+          ]
+        },
+        "companyType": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false,
+          "option": []
+        },
+        "registrationStatus": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false,
+          "option": [
+            {
+              "value": "Exempt",
+              "label": "Exempt from GST"
+            },
+            {
+              "value": "Registered",
+              "label": "GST Registered"
+            }
+          ]
+        },
+        "exemptCheckbox": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": true
+        },
+        "transactionDate": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false
+        },
+        "stateOfIncorporation": {
+          "required": true,
+          "display": true,
+          "inputType": true,
+          "disabled": false,
+          "isState": true
+        },
+        "yourTitle": {
+          "required": true,
+          "display": true,
+          "inputType": true,
+          "disabled": false,
+          "titleAtTheCompany": [
+            "Chief Executive Officer",
+            "President",
+            "Executive Vice President",
+            "Senior Vice President",
+            "Vice President",
+            "Chief Operating Officer",
+            "Chief Financial Officer",
+            "Treasurer",
+            "Manager"
+          ]
+        },
+        "primaryPurpose": {
+          "required": false,
+          "display": false,
+          "inputType": true,
+          "disabled": false
+        },
+        "companyContactInformation": {
+          "companyEmail": {
+            "validation": {
+              "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.([a-zA-Z]{2,4})$"
+            },
+            "required": true,
+            "display": true,
+            "inputType": "string",
+            "disabled": false
+          },
+          "primaryPhone": {
+            "validation": {
+              "pattern": "^([2-9][0-9]{2})([0-9]{3})([0-9]{4})$"
+            },
+            "required": true,
+            "display": true,
+            "inputType": "tel",
+            "disabled": false,
+            "length": 10
+          },
+          "addressLine1": {
+            "smartyAddressVerification": true,
+            "smartyInternational": false,
+            "required": true,
+            "disabled": false,
+            "display": true,
+            "inputType": "string"
+          },
+          "addressLine2": {
+            "required": false,
+            "disabled": false,
+            "display": true,
+            "inputType": "string"
+          },
+          "city": {
+            "required": true,
+            "display": true,
+            "disabled": false,
+            "inputType": "text"
+          },
+          "state": {
+            "required": true,
+            "display": true,
+            "disabled": false,
+            "inputType": true,
+            "isState": true
+          },
+          "zipCode": {
+            "validation": {
+              "pattern": "^\\d{5}$"
+            },
+            "required": true,
+            "display": true,
+            "disabled": false,
+            "inputType": "number",
+            "isZipCode": true
+          }
+        }
+      },
+      "display": true,
+      "admissionStepId": 6
+    },
+    "servicePartnerScreen": {
+      "searchByBusinessId": {
+        "required": false,
+        "inputType": "number",
+        "display": true,
+        "disabled": false
+      },
+      "searchByBusinessIdButton": {
+        "required": false,
+        "display": true,
+        "inputType": "button",
+        "disabled": false
+      },
+      "searchByServicePartnerId": {
+        "required": false,
+        "inputType": "number",
+        "display": true,
+        "disabled": false
+      },
+      "searchByServicePartnerIdButton": {
+        "required": false,
+        "display": true,
+        "inputType": "button",
+        "disabled": false
+      },
+      "viewListButton": {
+        "required": false,
+        "inputType": "button",
+        "disabled": false,
+        "display": true
+      },
+      "display": true,
+      "admissionStepId": 7
+    },
+    "display": true
+  },
+  "waitlistScreen": {
+    "display": true
+  },
+  "PeakSeason": {
+    "applied": true
+  },
+  "footer": {
+    "contactUs": {
+      "viaEmail": {
+        "display": true
+      },
+      "viaPhone": {
+        "display": true
+      }
+    }
+  }
+}

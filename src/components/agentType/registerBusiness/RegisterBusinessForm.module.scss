@@ -1,0 +1,618 @@
+@import '~spotify-shared-web/assets/styles/variables';
+@import '~spotify-shared-web/assets/styles/forms';
+
+
+
+
+.register-us {
+  .transaction-date-container {
+    width: 100%
+  }
+
+  .gst-title {
+    font-size: 12px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+  }
+
+  .info-icon-containter {
+    position: absolute;
+    top: 16px;
+    right: -26px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .validate-button-containter {
+    position: relative;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  
+
+  .verified-containter {
+    position: relative;
+    width: 10%;
+    top: 0.5rem;
+  }
+
+  .verified-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .width-70 {
+    width: 70% !important;
+  }
+
+  .width-80 {
+    width: 80.5%;
+  }
+
+  .verified-status {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center
+  }
+
+  .left-35 {
+    float: left !important;
+    margin-right: 35%;
+  }
+
+  .verified-style {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .disabled-input-field {
+    cursor: not-allowed !important;
+  }
+
+  .name-inputs-wrapper,
+  .stateId-inputs-wrapper,
+  .primaryPhone-inputs-wrapper,
+  .email-inputs-wrapper,
+  .address-inputs-wrapper,
+  .address2-inputs-wrapper,
+  .stateOfIncorporationId-inputs-wrapper,
+  .zip-code-inputs-wrapper,
+  .city-inputs-wrapper,
+  .exemptCheckBox-inputs-container,
+  .info-icon {
+    margin-bottom: 16px;
+  }
+
+  .checkbox-input {
+    -webkit-appearance: none;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: solid 2px ;
+    background-color: $white;
+    position: relative;
+    margin-right: 13px;
+    margin-bottom: 18px;
+    top: 10px;
+  
+    &:checked {
+      background: url('../../../assets/images/check-icon-black.svg') center center no-repeat;
+    }
+  }
+
+  .businessId-inputs-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-width: 90%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    gap: 2%;
+  }
+
+  .exemptCheckBox-inputs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .exemptCheckBox-inputs-container-hidden {
+    display: none;
+  }
+
+  .businessId-inputs-width {
+    width: 70.5%;
+  }
+
+  .businessId-input {
+    width: 62%;
+  }
+
+  .taxProgram-input {
+    width: 38%;
+  }
+
+  .tDate-inputs-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .company-type-inputs-wrapper {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    // height: 40px;
+    // padding-top: 0px;
+  }
+
+  .registration-status-inputs-wrapper {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    // height: 40px;
+    // padding-top: 0px;
+  }
+
+  .businessId-inputs-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    // height: 40px;
+    // padding-top: 0px;
+  }
+
+  .title-inputs-wrapper {
+    //margin-bottom: 18px;
+    margin-bottom: 1rem;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+
+  .title {
+    //margin-bottom:2rem;
+    //margin-top:-1.5rem;
+    font-size: 12px;
+    margin-top: -10px;
+    color: red
+  }
+
+  .justified-text {
+    font-weight: 600;
+    line-height: 22px;
+    color: black;
+    text-align: justify;
+    line-height: 1.5;
+    margin: left;
+    font-size: 12px;
+  }
+
+
+  .vatid-inputs-wrapper,
+  .fein-inputs-wrapper,
+  .gsthst-inputs-wrapper,
+  .city-inputs-wrapper {
+    margin-bottom: 22px;
+    margin-bottom: 16px;
+    height: 40px;
+  }
+
+  .name-error-form,
+  .company-type-error-form,
+  .stateId-error-form,
+  .vatid-error-form,
+  .fein-error-form,
+  .primaryPhone-error-form,
+  .email-error-form,
+  .address-error-form,
+  .address2-error-form,
+  .stateOfIncorporationId-error-form,
+  .zip-error-form,
+  .city-error-form {
+    margin-bottom: 24px;
+    height: 40px;
+  }
+
+  .zip-code-inputs-wrapper {
+    margin-bottom: 0;
+  }
+
+  .title-company-us {
+    margin-top: 32px;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+
+    .name-inputs-wrapper,
+    .company-type-inputs-wrapper,
+    .stateId-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .email-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .stateOfIncorporationId-inputs-wrapper,
+    .title-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .exemptCheckBox-inputs-container,
+    .city-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    .title-company-us {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+
+    .name-inputs-wrapper,
+    .company-type-inputs-wrapper,
+    .stateId-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .email-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .stateOfIncorporationId-inputs-wrapper,
+    .title-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .exemptCheckBox-inputs-container,
+    .city-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    .address-inputs-wrapper {
+      margin-bottom: 14px;
+    }
+
+    .title-company-us {
+      margin-top: 20px;
+    }
+
+    .zip-code-inputs-wrapper {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    .title-company-us {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.register-ca {
+
+  .name-inputs-wrapper,
+  .title-inputs-wrapper,
+  .gsthst-inputs-wrapper,
+  .vatid-inputs-wrapper,
+  .fein-inputs-wrapper,
+  .city-inputs-wrapper,
+  .provinceOfIncorporationId-inputs-wrapper,
+  .address-inputs-wrapper,
+  .address2-inputs-wrapper,
+  .provinceId-inputs-wrapper,
+  .primaryPhone-inputs-wrapper,
+  .email-inputs-wrapper,
+  .businessId-inputs-wrapper {
+    margin-bottom: 16px;
+    height: 40px;
+  }
+
+  .address-inputs-wrapper {
+    margin-top: 11px
+  }
+
+  .primaryPhone-company-us {
+    margin-top: 32px;
+  }
+
+  .zip-code-inputs-wrapper {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 12px;
+    margin-top: -10px;
+    font-size: 12px;
+    color: red
+  }
+
+  .phone {
+    // margin-bottom:2rem;
+    // margin-top:-1.5rem;
+    margin-top: -10px;
+    font-size: 12px;
+    color: red
+  }
+
+  // .businessId-inputs-wrapper,
+  // .city-inputs-wrapper {
+  //   margin-bottom: 22px;
+  // }
+  // .address-inputs-wrapper{
+  //   margin-top: 18px;
+  // }
+  .name-error-form,
+  .title-error-form,
+  .gsthst-error-form,
+  .primaryPhone-error-form,
+  .vatid-error-form,
+  .fein-error-form,
+  .city-error-form,
+  .provinceOfIncorporationId-error-form,
+  .address-error-form,
+  .address2-error-form,
+  .provinceId-error-form,
+  .zip-code-error-form,
+  .businessId-error-form,
+  .email-error-form,
+  .city-error-form {
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+
+    .name-inputs-wrapper,
+    .title-inputs-wrapper,
+    .gsthst-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .city-inputs-wrapper,
+    .provinceOfIncorporationId-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .provinceId-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .email-inputs-wrapper,
+    .businessId-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    // .address-inputs-wrapper{
+    //   margin-top: 14px;}
+    .primaryPhone-company-us {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+
+    .name-inputs-wrapper,
+    .title-inputs-wrapper,
+    .gsthst-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .city-inputs-wrapper,
+    .provinceOfIncorporationId-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .provinceId-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .email-inputs-wrapper,
+    .businessId-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    // .address-inputs-wrapper{
+    //   margin-top: 14px;}
+    .primaryPhone-company-us {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+.register-uk {
+
+  .name-inputs-wrapper,
+  .title-inputs-wrapper,
+  .fein-inputs-wrapper,
+  .vatid-inputs-wrapper,
+  .email-inputs-wrapper,
+  .primaryPhone-inputs-wrapper,
+  .address-inputs-wrapper,
+  .address2-inputs-wrapper,
+  .city-inputs-wrapper,
+  .provinceId-inputs-wrapper,
+  .provinceOfIncorporationId-inputs-wrapper {
+    margin-bottom: 1rem;
+    height: 40px;
+  }
+
+  .address-inputs-wrapper {
+    margin-top: 11px
+  }
+
+  .zip-code-inputs-wrapper {
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    font-size: 12px;
+    color: red
+  }
+
+  .phone {
+    // margin-bottom:10px;
+    margin-top: -10px;
+    font-size: 12px;
+    color: red
+  }
+
+  .primaryPhone-company-uk {
+    margin-top: 32px;
+  }
+
+  // .address-inputs-wrapper{
+  //   margin-top: 18px;
+  // }
+  .name-error-form,
+  .title-error-form,
+  .fein-error-form,
+  .vatid-error-form,
+  .email-error-form,
+  .primaryPhone-error-form,
+  .address-error-form,
+  .address2-error-form,
+  .city-error-form {
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+
+    .name-inputs-wrapper,
+    .title-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .email-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .city-inputs-wrapper,
+    .provinceId-inputs-wrapper,
+    .provinceOfIncorporationId-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    // .address-inputs-wrapper{
+    //   margin-top: 14px;}
+    .primaryPhone-company-uk {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+
+    .name-inputs-wrapper,
+    .title-inputs-wrapper,
+    .fein-inputs-wrapper,
+    .vatid-inputs-wrapper,
+    .email-inputs-wrapper,
+    .primaryPhone-inputs-wrapper,
+    .address-inputs-wrapper,
+    .address2-inputs-wrapper,
+    .city-inputs-wrapper,
+    .provinceId-inputs-wrapper,
+    .provinceOfIncorporationId-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    // .address-inputs-wrapper{
+    //   margin-top: 14px;}
+    .primaryPhone-company-uk {
+      margin-top: 20px;
+    }
+  }
+}
+
+.submit-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-weight: $normal;
+    color: $newBlack;
+    font-size: 16px;
+    margin: 0;
+    padding-right: 10px;
+  }
+}
+
+.restart-button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: $blue;
+  text-decoration: underline;
+  outline: none;
+  background: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.register-in {
+  .title {
+    font-size: 12px;
+    margin-top: -10px;
+    color: red
+  }
+
+  .fein-inputs-wrapper {
+    margin-bottom: 16px;
+    height: 40px;
+  }
+
+  .fein-error-form {
+    margin-bottom: 24px;
+    height: 40px;
+  }
+
+  .title-company-in {
+    margin-top: 32px;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+    .fein-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    .title-company-in {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-xl) {
+    .fein-inputs-wrapper {
+      margin-bottom: 10px;
+    }
+
+    .title-company-in {
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    .title-company-in {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.tool-tip-overlay {
+  background-color: white !important;
+
+}
+
+.tool-tip-content {
+  background-color: white !important;
+  color: teal !important;
+  text-align: left !important;
+}
+
+.error-input-field {
+  border: 1px solid rgb(254, 76, 76) !important;
+  border-radius: 5px !important;
+}
+
+.status-message {
+  font-family: 'Poppins Regular' !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  margin-bottom: 24px !important;
+  padding: 9px !important;
+  background: #e5f7f7 !important;
+  border-radius: 4px !important;
+  color: #455154 !important;
+  width: 70% !important;
+}

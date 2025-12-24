@@ -1,0 +1,214 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+
+.footer-links {
+    padding: 15px 0px;
+    font-size: 14px;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: #717073 ;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $screen-md) {
+        text-align: center;
+        padding: 15px 0px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    @media (min-width:$screen-lg) {
+        padding:5px 0px;
+    }
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 80px;
+    padding: 6px 0px;
+}
+
+.footer-copyright {
+    text-align: right;
+    //text-align: left;
+    color: #717073 !important;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+
+    @media (max-width: $screen-lg) {
+        text-align: center;
+        padding: 0 15px;
+        padding-bottom: 15px;
+    }
+
+    @media (min-width:$screen-lg) and (max-width:$screen-xl) {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+.footers {
+    background-color: #EAEFF2;
+    border-top: #C2CACA 1px solid;
+    // bottom: 0;
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+
+    // @media screen and (min-width: $screen-lg) {
+
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     padding: 1rem;
+
+    //     width: 100%;
+    // }
+}
+
+#footer .container-fluid {
+    background-color: #EAEFF2;
+    border-top: #C2CACA 1px solid
+}
+
+.col-skip {
+    @media (min-width:$screen-md) and (max-width:$screen-lg) {
+        margin: 0 8.33%
+    }
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px !important;
+}
+
+.footer-logo {
+    width: 90px;
+    padding: 6px 0px;
+}
+
+.trademark {
+    font-family: "Poppins Medium" sans-serif;
+    font-size: 14px;
+    color: #717073 !important;
+  }
+
+  .top-spacing {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 5px !important;
+    padding-top: 0px !important;
+}
+
+.align-item-center {
+    align-content: center;
+}
+
+.display-content {
+    display: contents;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-spacing {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 5px !important;
+    padding-top: 0px !important;
+}
+
+.align-item-center {
+    align-content: center;
+}
+
+.display-content {
+    display: contents;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .container-fluid {
+    background-color: #EAEFF2;
+    border-top: #C2CACA 1px solid
+}
+
+.selected-language {
+    /* Change to your preferred link color */
+    cursor: pointer;
+    color: #00827e !important;
+}
+
+.top-spacing {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 5px !important;
+    padding-top: 0px !important;
+}
+
+.align-item-center {
+    align-content: center;
+}
+
+.display-content {
+    display: contents;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links-2 {
+    padding: 0px 0px;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        color: #717073 ;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $screen-lg) {
+        text-align: center;
+        padding: 21px 15px 0px 15px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    @media (min-width:$screen-lg) and (max-width:$screen-xl) {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+.FTC-Notice{
+    font-size: 18px ;
+    color:$blue-button !important;
+    font-weight: $bold;
+}

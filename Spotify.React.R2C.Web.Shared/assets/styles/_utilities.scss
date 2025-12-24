@@ -1,0 +1,12 @@
+// Add custom styles here
+.separator {
+    border-bottom: 1px solid $lighter-gray;
+}
+
+.has-info {
+    background-image: url('./assets/images/info.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 20px;
+    padding-left: 26px;
+}

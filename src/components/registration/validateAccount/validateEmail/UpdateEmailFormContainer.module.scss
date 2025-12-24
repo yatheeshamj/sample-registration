@@ -1,0 +1,10 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.form-container {
+  &__copy {
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+    margin: 0 0 40px;
+  }
+}

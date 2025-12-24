@@ -1,0 +1,140 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.admissionStepTopmargin
+{
+  margin-top: 85px;
+}
+.step-list {
+  //list-style: none;
+  padding-left: 0;
+}
+
+.header-copy {
+  font-size: 18px;
+  color: $blue;
+  font-weight: $semi-bold;
+}
+.step-item {
+  //display: flex;
+  //align-items: left;
+  //padding: 6px 16px 6px 6px;
+  //margin-bottom: 22px;
+  margin-bottom: 16px;
+  color: #9EA1A2;
+  
+  //text-align: center;
+ /* .check-active {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    background: $white;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+
+  .check-complete {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    background-color: $white;
+    background-image: url('../../../assets/images/agentType/green-check-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    margin-right: 6px;
+  }*/
+
+  &__copy {
+    //font-size: 15px;
+    line-height: 19.44px;
+    font-weight: 600;
+    font-style: normal; 
+    font-family: "Poppins Light";
+    //color: $black;
+    //text-align: left;
+  }
+}
+
+.step-active {
+ // background: $blue-light;
+ // border-radius: 28px;
+ //color: #42414E;
+ color: $newBlack;
+ font-weight: 400;
+ font-style: normal;
+ line-height: 19px;
+ &__add{
+  font-family: "Poppins Regular" !important;
+ 
+ }
+}
+
+.step-complete {
+  //background: $gray-lightest;
+  //border-radius: 28px;
+  color: $spotify-blue;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+  &__add{
+    font-family: "Poppins Regular" !important;
+   
+   }
+}
+
+.header {
+  //color: $spotify-blue !important;
+  color: #42414E;
+  font-weight: 600 !important;
+  font-size: 16px;
+line-height: 24px;
+//text-align: center;
+}
+
+.stepWrapper{
+  @media screen and (max-width:329px) {
+    margin-left: 1rem;
+  }
+  
+}
+
+@media screen and (max-width:1600px){
+  .step-item {
+      margin-bottom: 12px;
+      line-height: 19px;
+  }
+  .admissionStepTopmargin
+{
+  margin-top: 72px;
+}
+}
+
+@media screen and (max-width:1200px) and (min-width:$screen-lg){
+  .step-item {
+      margin-bottom: 12px;
+      line-height: 19px;
+  }
+  .admissionStepTopmargin
+{
+  margin-top: 58px;
+}
+}
+
+@media screen and (max-width:$screen-lg){
+  .admissionStepTopmargin
+{
+  margin-top: 0px;
+}
+}
+@media screen and (max-width:$screen-md){
+  .admissionStepTopmargin
+{
+  margin-top: 0px;
+}
+}
+@media screen and (max-width:$screen-sm){
+  .admissionStepTopmargin
+{
+  margin-top: 0px;
+}
+}

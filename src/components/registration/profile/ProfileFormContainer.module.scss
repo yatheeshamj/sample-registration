@@ -1,0 +1,13 @@
+@import '../../../assets/styles/variables';
+
+.form-container {
+  &__copy {
+    font-weight: $normal;
+    font-style: normal;
+    margin: 0 0 28px 0;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    line-height: 22px;
+    color: $gray-dark;
+  }
+}

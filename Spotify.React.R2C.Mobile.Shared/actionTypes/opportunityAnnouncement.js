@@ -1,0 +1,1 @@
+export const DOWNLOAD_PDF_FOR_WEB = "DOWNLOAD_PDF_FOR_WEB"

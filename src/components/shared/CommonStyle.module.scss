@@ -1,0 +1,1126 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+.stickyWrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.alignright {
+    //text-align: right;
+    float: right !important;
+
+}
+
+.heading_1 {
+    font-size: 32px;
+    line-height: 48px;
+
+    &_top {
+        margin-top: 2.938rem; //47px;
+        // margin-bottom: 38px !important;
+    }
+
+    &_top2 {
+        margin-top: 57px;
+    }
+
+    &_topUS {
+        margin-top: 2.938rem; //47px;
+        // margin-bottom: 38px !important;
+    }
+
+    &_topUSView {
+        margin-top: 2.938rem;
+    }
+}
+
+.paragraph_1 {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; //24px
+}
+
+.mediumFont {
+    font-family: "Poppins Medium";
+}
+
+.regularFont {
+    font-family: "Poppins Regular" !important;
+}
+
+.heading_2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.paragraph_2 {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+.paragraph_3 {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+}
+
+.paragraph_4 {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
+
+.paragraph_5 {
+    font-size: 1rem;
+    line-height: 1.313rem;
+}
+
+.footerCopy {
+    font-size: 0.875rem;
+    line-height: 21px;
+}
+
+.filter-item-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    color: #42414e;
+}
+
+.largeCaptions {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.smallCaptions {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.buttonText {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.activeColor {
+    color: #00827e !important;
+}
+
+.inActiveColor {
+    color: #9ea1a2 !important;
+}
+
+.outOfFocus {
+    color: #ced4da !important;
+}
+
+.inCard {
+    background-color: #eaeff2 !important;
+}
+
+.cardTopMargin {
+    margin-top: 48px;
+}
+
+.cardTopMarginSR {
+    margin-top: 48px;
+}
+
+.blackColor {
+    color: #42414e !important;
+}
+
+.whiteColor {
+    color: #ffffff !important;
+}
+
+.lightWeight {
+    font-weight: 300 !important;
+}
+
+.regularWeight {
+    font-weight: 400 !important;
+}
+
+.mediumWeight {
+    font-weight: 500 !important;
+}
+
+.semiBoldWeight {
+    font-weight: 600 !important;
+}
+
+.boldWeight {
+    font-weight: 700 !important;
+}
+
+.allCaps {
+    text-transform: uppercase !important;
+}
+
+.lineHeight {
+    line-height: 28px !important;
+}
+
+.textCenter {
+    text-align: center !important;
+}
+
+.titleMargin {
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.headerMargin {
+    margin-bottom: 2.875rem;
+}
+
+.componentsMargin {
+    margin-top: 38px !important;
+    //margin-top: 0px;
+}
+
+.componentsBottomMargin {
+    margin-bottom: 38px;
+}
+
+.componentsTopMargin {
+    margin-top: 2.375rem;
+}
+
+.sub-headingMargin {
+    margin-bottom: 18px;
+    //margin-top: 0px;
+}
+
+.withinParaMargin {
+    margin-bottom: 0.375rem;
+    // margin-top: 0px;
+}
+
+.withinComponentMargin {
+    margin-bottom: 1.125rem;
+    margin-top: 0px;
+}
+
+.withinComponentMargin2 {
+    margin-bottom: 1.125rem;
+    margin-top: 0px;
+}
+
+.withinFormMargin {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.containerMargin {
+    margin-top: 2.375rem;
+    margin-bottom: 7.125rem;
+}
+
+.formMargin {
+    padding: 9px 16px;
+}
+
+.formColStyle {
+    font-style: normal;
+    font-size: 15px !important;
+    line-height: 23px;
+}
+
+.lastComponent {
+    margin-bottom: 49px;
+
+    @media screen and (max-width: 576px) {
+        margin-bottom: 42px; //2.625rem;
+    }
+}
+
+.lastComponent2 {
+    margin-bottom: 85px;
+
+    @media screen and (max-width: $screen-lg) {
+        margin-bottom: 64px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+        margin-bottom: 64px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        margin-bottom: 64px;
+    }
+}
+
+.lastComponent3 {
+    margin-top: 109px;
+    margin-bottom: 64px;
+}
+
+.lastComponent4 {
+    margin-top: 32px;
+    margin-bottom: 145px;
+
+    @media screen and (max-width: $screen-xxl) {
+        margin-top: 28px;
+    }
+
+    @media screen and (max-width: $screen-xl) {
+        margin-top: 28px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        //margin-top: 2rem;
+        margin-bottom: 64px;
+    }
+}
+
+// .cardWidth {
+//     width: 92.3%;
+// }
+.cardPadding {
+    padding: 39px 50px;
+}
+
+.subHeading1 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.subHeading2 {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.subHeading3 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.textNormalCase {
+    text-transform: none;
+}
+
+/*.wrapColWidth{
+   // max-width: 60%;
+}*/
+.cardOuterWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media screen and (max-width: 576px) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.cardInBetween {
+    margin-bottom: 39px;
+}
+
+// .widthChange {
+//     width: 64.104%;
+// }
+// .widthChange2 {
+//     //width: 84.837%;
+//     width: 96.657%;
+//    // width: 98%;
+// }
+// .widthChange3 {
+//     width: 85.3%;
+// }
+// .widthChange4 {
+//     // width: 76.3%;
+//     width: 80.2%;
+// }
+// .widthChange5 {
+//     width: 77.16%;
+// }
+.btn-group2 {
+    height: 46px !important;
+}
+
+.regularFont {
+    font-family: "Poppins Regular" !important;
+}
+
+.lightFont {
+    font-family: "Poppins Light" !important;
+}
+
+.borderStyle {
+    border-bottom: 1px solid #dbe2e2;
+}
+
+.mb18 {
+    margin-bottom: 18px;
+}
+
+.filter {
+    &_Title {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.opportunity {
+    &__Card {
+        &__Title {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__Subheading {
+            font-size: 13px;
+            line-height: 19px;
+        }
+    }
+}
+
+.opp {
+    &__Card {
+        &__Padding {
+            padding: 24px;
+        }
+    }
+}
+
+.agreementcopy1 {
+    margin-top: 12px;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: $screen-xxl) {
+    .cardTopMargin {
+        margin-top: 16px;
+    }
+
+    .cardTopMarginSR {
+        margin-top: 16px;
+    }
+
+    .lastComponent5 {
+        margin-bottom: 0;
+    }
+
+    .agreementcopy1 {
+        margin-top: 16px;
+        margin-bottom: 27px;
+    }
+
+    .opp {
+        &__Card {
+            &__Padding {
+                padding: 12px 18px;
+            }
+        }
+    }
+
+    .mb18 {
+        margin-bottom: 14px !important;
+    }
+
+    // .widthChange {
+    //     width: 61%;
+    // }
+    .heading_1 {
+        font-size: 24px;
+        line-height: 36px;
+
+        &_top {
+            margin-top: 45px;
+        }
+
+        &_top2 {
+            margin-top: 65px;
+        }
+
+        &_topUS {
+            margin-top: 45px;
+        }
+
+        &_topUSView {
+            margin-top: 45px;
+
+        }
+    }
+
+    .paragraph_3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .largeCaptions {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .paragraph_1 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .titleMargin {
+        margin-bottom: 1rem;
+    }
+
+    .headerMargin {
+        margin-bottom: 40px;
+    }
+
+    .withinComponentMargin {
+        margin-bottom: 14px;
+    }
+
+    .withinComponentMargin2 {
+        margin-bottom: 15px;
+    }
+
+    .subHeading1 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .subHeading3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .cardPadding {
+        padding: 24px 34px;
+    }
+
+    .cardInBetween {
+        margin-bottom: 20px;
+    }
+
+    .lastComponent {
+        margin-bottom: 60px;
+    }
+
+    .headerForm {
+        margin-top: 28px !important;
+    }
+
+    .componentsMargin {
+        margin-top: 28px !important;
+    }
+
+    .componentsBottomMargin {
+        margin-bottom: 28px !important;
+    }
+
+    .containerMargin {
+        margin-top: 44px;
+    }
+
+    .filter {
+        &__title {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &__Type {
+            font-size: 12px;
+        }
+    }
+
+    .opportunity {
+        &__Card {
+            &__Title {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            &__Subheading {
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .sub-headingMargin {
+        margin-bottom: 1rem;
+        //margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: $screen-xl) {
+    .cardTopMargin {
+        margin-top: 16px;
+    }
+
+    .cardTopMarginSR {
+        margin-top: 16px;
+    }
+
+    .lastComponent5 {
+        margin-bottom: 0;
+    }
+
+    .containerMargin {
+        margin-top: 46px;
+    }
+
+    .agreementcopy1 {
+        margin-top: 24px;
+        margin-bottom: 27px;
+    }
+
+    .opportunity {
+        &__Card {
+            &__Title {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            &__Subheading {
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .opp {
+        &__Card {
+            &__Padding {
+                padding: 16px 29px 15px 29px;
+            }
+        }
+    }
+
+    .lastComponent {
+        margin-bottom: 60px;
+    }
+
+    .mb18 {
+        margin-bottom: 14px !important;
+    }
+
+    .headerForm {
+        margin-top: 28px !important;
+    }
+
+    .componentsMargin {
+        margin-top: 28px;
+    }
+
+    .componentsBottomMargin {
+        margin-bottom: 28px;
+    }
+
+    .subHeading1 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .subHeading3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    // .widthChange4 {
+    //     width: 61%;
+    // }
+    //.paddingChangeMedium {
+    // padding-left: 120px !important;
+    // padding-right: 120px !important;
+    //}
+    .heading_1 {
+        font-size: 18px;
+        line-height: 36px;
+
+        &_top {
+            margin-top: 30px;
+        }
+
+        &_top2 {
+            margin-top: 50px;
+        }
+
+        &_topUS {
+            margin-top: 30px;
+        }
+
+        &_topUSView {
+            margin-top: 30px;
+        }
+    }
+
+    .paragraph_1 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .paragraph_3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .largeCaptions {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .titleMargin {
+        margin-bottom: 1rem;
+    }
+
+    .headerMargin {
+        margin-bottom: 40px;
+    }
+
+    .withinComponentMargin {
+        margin-bottom: 14px;
+    }
+
+    .withinComponentMargin2 {
+        margin-bottom: 15px;
+    }
+
+    .cardPadding {
+        padding: 24px 30px;
+    }
+
+    .cardInBetween {
+        margin-bottom: 20px;
+    }
+
+    .filter {
+        &__title {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &__Type {
+            font-size: 12px;
+        }
+    }
+
+    // .widthChange4,
+    // .widthChange,
+    // .widthChange2, .widthChange {
+    //     //width: 100%;
+    // }
+
+    .sub-headingMargin {
+        margin-bottom: 14px;
+        //margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .reverseDirection {
+        flex-direction: row-reverse;
+    }
+
+    .cardTopMargin {
+        margin-top: 0;
+    }
+
+    .cardTopMarginSR {
+        margin-top: 64px;
+    }
+
+    .lastComponent5 {
+        margin-bottom: 64px;
+    }
+
+    .agreementcopy1 {
+        margin-top: 12px;
+        margin-bottom: 38px;
+    }
+
+    .opportunity {
+        &__Card {
+            &__Title {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            &__Subheading {
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .opp {
+        &__Card {
+            &__Padding {
+                padding: 12px 28px;
+            }
+        }
+    }
+
+    .widthChange4,
+    .widthChange,
+    .widthChange2,
+    .widthChange {
+        width: 100%;
+    }
+
+    .paddingChange {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .heading_1 {
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 500;
+
+        &_top {
+            margin-top: 49px;
+        }
+
+        // &_top2{
+        //     margin-top: 59px;
+        // }
+        &_topUS {
+            margin-top: 0;
+        }
+
+        &_topUSView {
+            margin-top: 64px;
+        }
+    }
+
+    .subHeading1 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .subHeading3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .paragraph_1 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .paragraph_3 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .largeCaptions {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .headerMargin {
+        margin-bottom: 2rem;
+    }
+
+    .withinComponentMargin {
+        margin-bottom: 18px;
+    }
+
+    .withinComponentMargin2 {
+        margin-bottom: 18px;
+    }
+
+    .withinValidationForm {
+        margin-bottom: 10px;
+    }
+
+    .headerForm {
+        margin-top: 38px !important;
+    }
+
+    .componentsMargin {
+        margin-top: 38px;
+    }
+
+    .componentsBottomMargin {
+        margin-bottom: 38px;
+    }
+
+    .cardInBetween {
+        margin-bottom: 24px;
+    }
+
+    .widthChange5,
+    .widthChange4,
+    .widthChange,
+    .widthChange2,
+    .widthChange3 {
+        width: 100%;
+    }
+
+    .cardStyle {
+        &__specific {
+            float: none !important;
+            margin-left: auto;
+            margin-right: auto;
+            // width: 78% !important;
+        }
+    }
+
+    .sub-headingMargin {
+        margin-bottom: 12px;
+        //margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .cardTopMargin {
+        margin-top: 0;
+    }
+
+    .cardTopMarginSR {
+        margin-top: 64px;
+    }
+
+    .lastComponent5 {
+        margin-bottom: 64px;
+    }
+
+    .borderStyle {
+        border: none;
+    }
+
+    .cardPadding {
+        padding: 24px 73px;
+    }
+
+    .containerMargin {
+        margin-top: 51px;
+    }
+
+    .headerMargin {
+        margin-bottom: 2rem;
+    }
+
+    .withinComponentMargin {
+        margin-bottom: 18px;
+    }
+
+    .withinComponentMargin2 {
+        margin-bottom: 18px;
+    }
+
+    .withinValidationForm {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+
+    .lastComponent5 {
+        margin-bottom: 64px;
+    }
+
+    .containerMargin {
+        margin-top: 1rem;
+    }
+
+    .agreementcopy1 {
+        margin-top: 12px;
+        margin-bottom: 38px;
+    }
+
+    .opportunity {
+        &__Card {
+            &__Title {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &__Subheading {
+                font-size: 13px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .opp {
+        &__Card {
+            &__Padding {
+                padding: 12px 28px;
+            }
+        }
+    }
+
+    .widthChange_70 {
+        width: 70% !important;
+    }
+
+    .widthChange5,
+    .widthChange4,
+    .widthChange,
+    .widthChange2,
+    .widthChange3 {
+        width: 100%;
+    }
+
+
+
+    .headerForm {
+        margin-top: 38px !important;
+    }
+
+    .paragraph_2 {
+        line-height: 1.375rem;
+    }
+
+    .heading_1 {
+        font-weight: 500 !important;
+        font-size: 18px;
+        line-height: 36px;
+
+        &_top {
+            margin-top: 47px;
+        }
+
+        // &_top2{
+        //     margin-top: 57px;
+        // }
+        &_topUS {
+            margin-top: 0;
+        }
+
+        &_topUSView {
+            margin-top: 64px;
+        }
+    }
+
+    .subHeading1 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .subHeading3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .paragraph_1 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .paragraph_3 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .largeCaptions {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .headerMargin {
+        margin-bottom: 32px;
+    }
+
+    .withinComponentMargin {
+        margin-bottom: 18px;
+    }
+
+    .withinComponentMargin2 {
+        margin-bottom: 18px;
+    }
+
+    .withinValidationForm {
+        margin-bottom: 6px;
+    }
+
+    .cardPadding {
+        padding: 42px 27px;
+    }
+
+    .cardInBetween {
+        margin-bottom: 24px;
+    }
+
+    .cardStyle {
+        &__specific {
+            float: none !important;
+            //margin-left: auto;
+            //margin-right: auto;
+            width: 100% !important;
+        }
+    }
+
+    .sub-headingMargin {
+        margin-bottom: 12px;
+        //margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: $screen-lg) and (min-width: $screen-sm) {
+    .centralize {
+        &__Row {
+            margin: 0 8.3%;
+        }
+    }
+}
+
+
+
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    #card-para-style-us {
+        width: 123px;
+    }
+
+    .card-description-style-us2 {
+        width: 175px;
+    }
+
+    .btn {
+        &__card-description-style {
+            &__us {
+                padding: 0px;
+            }
+        }
+    }
+
+    .common {
+        &_ValidationPageWidth {
+            width: 583px;
+        }
+    }
+
+    .agreement {
+        &_body {
+            overflow-x: hidden;
+        }
+    }
+
+    @media screen and (max-width:$screen-md) {
+        .common {
+            &_ValidationPageWidth {
+                max-width: 450px;
+            }
+        }
+    }
+
+    @media screen and (max-width:$screen-sm) {
+        .common {
+            &_ValidationPageWidth {
+                max-width: 380px;
+            }
+        }
+    }
+
+    @media screen and (max-width:$screen-xs) {
+        .common {
+            &_ValidationPageWidth {
+                max-width: 240px;
+            }
+        }
+    }
+}

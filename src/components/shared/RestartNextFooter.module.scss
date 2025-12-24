@@ -1,0 +1,77 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+  }
+
+  &__restart {
+    order: 2;
+
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
+
+    p {
+      font-weight: $normal;
+      color: $newBlack;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .restart-button {
+      /*border: solid;
+      background-color: $spotify-blue;
+      padding: 0;
+      cursor: pointer;
+      color: $blue;
+      //text-decoration: underline;
+      outline: none;
+      //background: none;*/
+      border: $spotify-blue;
+    padding: 16px;
+    cursor: pointer;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    outline: none;
+    background: $spotify-blue;
+    border-radius: 4px;
+    }
+  }
+
+  &__next {
+    order: 1;
+    margin-bottom: 24px;
+    margin-top: 28px;
+    text-align: right;
+    
+    @media (min-width: $screen-md) {
+      order: 2;
+      margin-bottom: 0;
+    }
+    @media screen and  (max-width: $screen-lg){
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+    @media screen and  (max-width: $screen-sm){
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+
+.orangeButton{
+  background-color: $orange !important;
+}

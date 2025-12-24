@@ -1,0 +1,1 @@
+export const SET_AGENT_PROFILE = "SET_AGENT_PROFILE"

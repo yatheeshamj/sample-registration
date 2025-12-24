@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+
+.loading-component {
+  width: 100%;
+  text-align: center;
+}
+
+.loading-spinner {
+  height: 124px;
+  margin: 36px 0;
+}
+
+.overlay-spinner {
+  height: 70px !important;
+  width: 70px !important;
+  margin: 36px 0 !important;
+  position: absolute;
+  top: 0% !important;
+  left: 32% !important;
+}
+
+.field-spinner-style {
+  height: 40px !important;
+  width: 40px !important;
+  margin: 0% 0 !important;
+  position: absolute;
+  top: 17% !important;
+  left: 32% !important;
+}

@@ -1,0 +1,116 @@
+/* General Container Styling */
+.pc-scan-container {
+  font-family: Poppins;
+  margin: 0 auto;
+  font-size: 12px !important;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Title Styling */
+.title {
+  color: #00827e;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.important-info {
+  margin-bottom: 20px !important;
+}
+
+.important-info p{
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.bold-title{
+  font-weight: 700;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 15px;
+}
+
+.pc-check-info ol {
+  padding-left: 25px;
+}
+.pc-check-info p {
+  line-height: 16px;
+}
+.support-info p{
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+.support-info div{
+  font-weight: 600;
+}
+
+.failed-tests ul {
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+/* Table Styling */
+.requirements-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.requirements-table th,
+.requirements-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.requirements-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  width: 50%;
+}
+
+.requirements-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.requirements-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.run-scan-button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00827e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.run-scan-button:hover {
+  background-color: #026864;
+}
+
+.button-container {
+  width: 100%;
+  justify-items: end;
+  margin: 0 16px 0 0;
+  right: 2.5%;
+  bottom: 6%;
+}
+
+.loader-container-div{
+  display:flex;
+  position: relative;
+  left: 40%;
+}
+

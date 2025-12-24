@@ -1,0 +1,69 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    clear: both;
+    font-size: 14px;
+    color: #717073 !important;
+    width: 100%;
+    background-color: #EAEFF2;
+    border-top: #C2CACA 1px solid;
+    padding: 10px 0;
+
+    @media (min-width:$screen-xl) and (max-width:$screen-xxl) {
+        font-size: 12px;
+        line-height: 5px;
+    }
+
+    @media (min-width:$screen-lg) and (max-width:$screen-xl) {
+        font-size: 10px;
+        line-height: 21px;
+    }
+}
+
+.footer-links {
+    padding: 15px 0px;
+
+    a {
+        color: #717073;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: $screen-lg) {
+        text-align: center;
+        
+    }
+    @media (min-width: $screen-xxl) {
+        padding: 5px 0px;
+    }
+
+}
+
+.footer-copyright {
+    padding: 0;
+    text-align: right;
+    color: #717073 !important;
+    cursor: pointer;
+
+    @media (max-width: $screen-lg) {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+}
+
+.top-spacing {
+    margin-top: 10px !important;
+}
+
+.FTC-Notice{
+    font-size: 18px ;
+    color:$blue-button !important;
+    font-weight: $bold;
+}

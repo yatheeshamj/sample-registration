@@ -1,0 +1,84 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 56px;
+  width: 276px;
+
+  @media (min-width: $screen-md) {
+    width: 414px;
+  }
+}
+
+.checkpoint {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border: 2px solid $gray-light;
+  background: $white;
+  border-radius: 100%;
+}
+
+.checkpoint-active {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  border: 2px solid $blue;
+  background: $white;
+  border-radius: 100%;
+}
+
+.checkpoint-complete {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  background: url('../../assets/images/progressBar/complete-icon.svg') center center no-repeat;
+  border-radius: 100%;
+}
+
+.checkpoint-name {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-weight: $semi-bold;
+  color: $gray-checkpoint;
+  font-size: 14px;
+}
+
+.checkpoint-name-complete {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-weight: $semi-bold;
+  color: $blue;
+  font-size: 14px;
+}
+
+.divider {
+  height: 2px;
+  width: 70px;
+  background: $gray-light;
+
+  @media (min-width: $screen-md) {
+    width: 116px;
+  }
+}
+
+.divider-complete {
+  height: 2px;
+  width: 70px;
+  background: $blue;
+
+  @media (min-width: $screen-md) {
+    width: 116px;
+  }
+}

@@ -1,0 +1,78 @@
+.form-input {
+  display: block;
+  // border-bottom: 2px solid $gray-light;
+  border-radius: 4px;
+  border:  1.5px solid #ced4da;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #495057 !important;
+  padding: 6px 0px 6px 9px;
+  width: 100%;
+  outline: none;
+  line-height: 22px;
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+  &:-webkit-autofill {
+    box-shadow: $box-shadow-autofill;
+    -webkit-text-fill-color: $gray-dark !important;
+    color: $gray-dark !important;
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: $box-shadow-autofill;
+    }
+  }
+}
+
+.input-error {
+  border-color: $red-error;
+  &:hover {
+    border-color: $red-error;
+  }
+}
+
+.input-success {
+  border-color: $green-success;
+}
+
+.message-error {
+  color: $red-error;
+  font-family: 'Poppins';
+  font-size: 13px;
+  padding: 8px 0 0 9px;
+}
+
+.message-success {
+  color: $green-success;
+  font-family: $font-primary;
+  font-size: 13px;
+  padding: 8px 0 0 9px;
+}
+
+.server-error {
+  font-family: 'Poppins Regular';
+  font-weight: $semi-bold;
+  font-size: 16px;
+  margin-bottom: 24px;
+  padding: 9px;
+  background: $red-light;
+  border-radius: 4px;
+  color: $gray-dark;
+}
+
+.redirect-message {
+  font-family: 'Poppins Regular';
+  font-weight: $semi-bold;
+  font-size: 16px;
+  margin-bottom: 24px;
+  padding: 9px;
+  background: $blue-light;
+  border-radius: 4px;
+  color: $gray-dark;
+}

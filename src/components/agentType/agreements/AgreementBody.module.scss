@@ -1,0 +1,14 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.agreement-body {
+  max-height: 55vh;
+  overflow: scroll;
+  border: solid 1px $gray-light;
+  padding: 27px 34px;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+  // can control styling of the inner html
+  h1 {
+    text-align: left;
+  }
+}

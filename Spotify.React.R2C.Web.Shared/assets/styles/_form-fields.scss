@@ -1,0 +1,97 @@
+// Bootstrap floating label input field
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 367px;
+    width: 100%;
+}
+
+.form-control,
+.custom-select {
+    height: 40px;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: $light-blue;
+    box-shadow: none;
+}
+
+.form-control:focus+.form-control-placeholder,
+.custom-select:focus+.form-control-placeholder {
+    color: $light-blue;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+.input-group-addon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 13px 13px 0 0;
+    transition: all 200ms;
+    font-weight: bold;
+
+    .password-eye {
+        color: $black;
+    }
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder,
+.custom-select:focus+.form-control-placeholder,
+.custom-select:valid+.form-control-placeholder,.form-control:disabled+.form-control-placeholder {
+    font-size: 75%;
+    transform: translate3d(8px, -70%, 0);
+    opacity: 1;
+    padding: 0 8px;
+    margin: 0;
+    background: white;
+}
+
+.invalid-input {
+    color: $red;
+    //border-top: 1.5px solid $red;
+    max-width: 367px;
+    width: 100%;
+    padding-top: 4px;
+    margin-top: .4rem;
+}
+
+.invalid-control,
+.invalid-control:focus,
+.invalid-control:invalid {
+    border-color: $red !important;
+}
+
+.invalid-control:focus+.form-control-placeholder {
+    color: $red;
+}
+
+.success-input {
+    color: $light-blue;
+    border-top: 1.5px solid $light-blue;
+    max-width: 367px;
+    width: 100%;
+    padding-top: 4px;
+    margin-top: .4rem;
+}
+
+.success-control,
+.success-control:focus,
+.success-control:invalid {
+    border-color: $light-blue !important;
+}
+
+.success-control:focus+.form-control-placeholder {
+    color: $light-blue;
+}
+// End of Custom Bootstrap floating label

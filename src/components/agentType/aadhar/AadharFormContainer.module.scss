@@ -1,0 +1,49 @@
+@import '~spotify-shared-web/assets/styles/variables';
+@import '~spotify-shared-web/assets/styles/forms';
+
+.ssn-inputs-wrapper {
+  margin-bottom: 32px;
+}
+
+.form-container {
+  @media screen and (max-width:475px) {
+    //margin-top: -15%;
+  }
+  &__header {
+    line-height: 16px;
+    color: #42414E;
+    font-style: normal;
+    //margin: 30px 0 12px;
+  }
+
+  &__copy {
+    font-weight: $normal;
+    font-style: normal;
+    color: #42414E;
+    //font-size: 15px;
+    //line-height: 22px;
+    //color: $black;
+    //margin: 0 0 30px;
+  }
+}
+
+.submit-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .cancel-button {
+    font-weight: $semi-bold;
+    font-size: 16px;
+    line-height: 22px;
+    outline: none;
+    color: $blue;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    letter-spacing: -0.4px;
+    cursor: pointer;
+  }
+}

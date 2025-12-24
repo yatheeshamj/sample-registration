@@ -1,0 +1,48 @@
+@import '~spotify-shared-web/assets/styles/variables';
+
+.enrollmentPrerequisitesContainer {
+
+	@media (max-width: $screen-md) {
+		.main-content .row {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.secondary-content {
+			margin-top: 25px;
+		}
+
+		.QuickOverviewCardWrapper {
+			margin-top: 25px;
+		}
+	}
+
+	.signed {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: $bold;
+		color: $green-success;
+		border: 2px solid $green-success;
+		border-radius: $border-radius-button;
+		height: 30px;
+		width: 90px;
+		font-size: 14px;
+		line-height: 14px;
+		cursor: default;
+	}
+
+	.processingFee {
+		font-family: "Poppins Medium";
+		font-weight: 600;
+		font-size: 16px;
+	}
+}
+
+.inProgressModalText{
+	min-height: 100px;
+}
+
+.assessment-details {
+	font-family: 'Poppins Regular', 'OpenSans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}

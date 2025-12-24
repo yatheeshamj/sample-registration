@@ -1,0 +1,185 @@
+@import "~spotify-shared-web/assets/styles/variables";
+@import "~spotify-shared-web/assets/styles/forms";
+
+.col-skip{
+  @media (min-width: $screen-md) and (max-width:$screen-lg){
+    margin:0 8.33%;
+  }
+}
+
+.AgentMajorType-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px $gray-light;
+  padding: 1.5rem;
+  height: 100%;
+  .img-container{
+    padding:2.4rem;
+    img {
+      height:17rem;
+      width: 15rem;
+      @media screen and (max-width: 425px) {
+        width: 150px;
+        height: auto;
+      }
+      @media (min-width:$screen-lg) and (max-width:$screen-xxl){
+        height:12rem;
+        width:12rem
+      }
+      @media (min-width:$screen-md) and (max-width:$screen-lg){
+        height:10rem;
+        width:10rem
+      }
+    }
+    @media (min-width:$screen-lg) and (max-width:$screen-xxl){
+      padding:1.4rem;
+    }
+    @media (min-width:$screen-md) and (max-width:$screen-lg){
+     padding:1.2rem
+    }
+
+  }
+  .card-h >h4 {
+    @media (max-width:992px){
+      margin: 1rem 0rem;
+    margin-top: 3rem;
+    }
+    
+    
+  }
+  
+}
+
+.tos-inputs-wrapper{
+  p {
+    text-align: left;
+    font-weight:400;
+    color:#42414E;
+    // line-height:1.4rem;
+
+    // @media (min-width: 992px) and (max-width:1600px){
+    //   font-size: 13px !important;
+    // }
+  }
+
+  
+}
+
+@media screen and (max-width: 992px) {
+  .AgentMajorType-card {
+    padding: 24px;
+  }
+}
+
+.tos-inputs-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+
+  p {
+    margin: 0;
+    font-weight: 400;   
+    color: #42414e;
+    text-align: left;
+  }
+}
+
+.checkbox-input {
+  display: block;
+  -webkit-appearance: none;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: solid 1px $gray-light;
+  background-color: $white;
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+
+  &:checked {
+    background: url("../../assets/images/checkbox-icon.svg") center center
+      no-repeat;
+  }
+}
+
+.major-agent-type {
+  &__container {
+    margin: 0 3rem !important;
+
+    @media screen and (max-width: 425px) {
+      margin: 0 0 0 1rem !important;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      color: $black;
+    }
+
+    &__wrapper0 {
+      @media screen and (min-width: 768px) {
+        margin-top: -35px;
+      }
+    }
+
+    &__wrapper1 {
+      @media screen and (min-width: 768px) {
+        margin-top: -15px;
+      }
+    }
+    // &__wrapper-UK1 {
+    //   @media screen and (min-width: 768px) {
+    //     margin-top: 40px;
+    //     margin-bottom: 10px;
+    //   }
+    // }
+    @media screen and (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+h3 {
+  color: $spotify-blue;
+  font-weight: $semi-bold;
+}
+
+
+.text-bold {
+
+  margin: 1rem 0rem 0 0;
+}
+
+
+
+
+.agent-type-image1 {
+  width: 250px;
+}
+
+p>sup{
+  font-size: 10px;
+}
+
+.font1-lineHeight1{
+  font-size: 15px;
+  line-height: 22.5px;
+  @media (min-width:$screen-lg) and (max-width:$screen-xxl){
+    font-size: 10px;
+    line-height: 16px;
+  }  
+}
+
+
+.font2-lineHeight2{
+  font-weight: 600 !important;  
+}

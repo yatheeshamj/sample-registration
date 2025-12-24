@@ -1,0 +1,9 @@
+This library is to be shared between the portal widget and the R2C Web app.
+
+Please note; Do not use router logic inside this library, at all!!
+Since the portal widget doesnt use urls/Router logic.
+
+So no chaning routes, urls etc...
+
+If we need to handle a on click event that does a router changein the R2C web app pass it in via props
+that way you can pass it in via props for the Portal Widget and you handle it from the parent

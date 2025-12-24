@@ -1,0 +1,3 @@
+export const GET_Enrollment_Assessments_For_Opportunity = "GET_Enrollment_Assessments_For_Opportunity"
+export const GET_Enrollment_Assessments_For_Opportunity_SUCCESS = "GET_Enrollment_Assessments_For_Opportunity_SUCCESS"
+export const GET_Enrollment_Assessments_For_Opportunity_ERROR = "GET_Enrollment_Assessments_For_Opportunity_ERROR"

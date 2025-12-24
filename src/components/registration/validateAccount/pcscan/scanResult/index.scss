@@ -1,0 +1,77 @@
+.scan-results-container {
+  padding: 20px;
+  font-family: Poppins;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.title {
+  color: #00827e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overall-result {
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.result-pass {
+  color: #00827e;
+  font-weight: bold;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 25%;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.results-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.result-pass {
+  color: #00827e;
+}
+
+.result-fail {
+  color: #D75457;
+}
+.result-unknown {
+  color: #D75457;
+}
+
+.next-button {
+  display: block;
+  background-color: #00827e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #026864;
+}
+
+.next-button-container {
+  width: 100%;
+  justify-items: end;
+}

@@ -1,0 +1,212 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+@media (min-width: $screen-lg) {
+    .fix-header-margin-left {
+        margin-left: -163px !important;
+        margin-top: -20px;
+    }
+
+}
+
+.chng2 {
+    color: $red;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: $light-blue;
+    text-decoration: none;
+    background-color: transparent
+}
+
+.dropdown-item {
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 1rem 0 !important;
+}
+
+#mainTopNave img {
+    width: 150px;
+    height: 50px;
+}
+
+#navbarNav>.nav>.nav-item>.nav-link {
+    color: #42414E;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+}
+
+#mainMenuOptions .nav-link {
+    color: $newBlack;
+}
+
+#mainMenuOptions .nav-link.active {
+    color: $spotify-blue;
+    // text-transform: capitalize;
+    border-bottom: 3px solid $spotify-blue;
+
+}
+
+.header-utilities {
+    width: 100%;
+    margin: 0rem;
+    margin-top: 20px;
+    margin-bottom: -30px;
+
+}
+
+.height-130 {
+    height: 150px !important;
+}
+
+// #mainlogo {
+//     width: "150px";
+//      height:"50px";
+// }
+@media (max-width:992px) {
+    .container {
+        padding: 0 15px !important;
+    }
+}
+
+
+@media (max-width: $screen-md) {
+    .header-utilities {
+        padding-left: 20px;
+        align-items: flex-start !important;
+    }
+
+    #mainTopNave>.container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+.header-utility {
+    // color: $light-gray !important;
+    margin-bottom: 4px;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.chng1 {
+    &__getting {
+        &__Started {
+            color: $blue !important;
+            font-size: 1rem !important;
+            font-weight: 400 !important;
+            font-family: 'Poppins Regular' !important;
+        }
+    }
+
+}
+
+
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    &:hover {
+        border-bottom: 3px solid $spotify-blue;
+        color: $light-blue;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    // color:#42414E !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $light-blue;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: $spotify-blue !important;
+    border-bottom: 3px solid $spotify-blue;
+}
+
+@media only screen and (max-width: 330px) {
+
+    .navbar-nav .nav-link {
+        padding: .5rem 0;
+    }
+
+    .header-utility {
+        padding: .5rem 0;
+    }
+
+}
+
+.navbar {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    text-align: left;
+    border-radius: 0;
+    border-bottom: 2px solid $spotify-blue;
+    color: $newBlack;
+}
+
+.navbar .dropdown a {
+    color: $newBlack;
+}
+
+.navbar .dropdown-menu a:hover {
+    color: $spotify-blue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:576px) {
+    #mainTopNave img {
+        width: 90px;
+        height: 30px;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+.col-skip-right {
+    @media (min-width:$screen-md) and (max-width:$screen-lg) {
+        margin-right: 8.33%
+    }
+}
+
+.col-skip-left {
+    @media (min-width:$screen-md) and (max-width:$screen-lg) {
+        margin-left: 8.33%
+    }
+}
+
+
+#mainMenuOptions {
+
+    @media screen and (max-width:576px) {
+        margin-top: 25px
+    }
+}

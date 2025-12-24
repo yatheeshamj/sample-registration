@@ -1,0 +1,101 @@
+@import "~spotify-shared-web/assets/styles/variables";
+
+.agent-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px $gray-light;
+  padding: 1.5rem;
+  height: 100%;
+
+  .img-container {
+    width: 15rem;
+    height: 17rem;
+    margin-bottom: 16px;
+
+    @media (min-width:$screen-md) and (max-width:$screen-xxl) {
+      width: 134px;
+      height: 134px;
+    }
+  }
+
+
+}
+
+.agent-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+  }
+
+  &__image-wrapper {
+    height: 128px;
+    width: 154px;
+    margin: 0 0 24px 0;
+
+    @media (min-width: $screen-sm) {
+      margin: 0 15px 0 28px;
+    }
+
+    img {
+      height: 128px;
+      width: 154px;
+    }
+  }
+
+  &__content-wrapper {
+    margin-right: 20px;
+    margin-bottom: 12px;
+    width: 100%;
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-right: 0;
+    }
+
+    &--name>p {
+      font-weight: 600;
+      color: #42414e;
+      font-size: 16px !important;
+      line-height: 24px;
+      margin: 0 0 4px;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 0 10px;
+      }
+
+      @media (min-width:$screen-md) and (max-width:$screen-xxl) {
+        font-size: 12px !important;
+        line-height: 18px;
+      }
+    }
+
+    &--description {
+      font-weight: $normal;
+      color: $black;
+
+      margin: 0;
+      margin-bottom: 1.5rem;
+
+      @media (min-width:$screen-md) and (max-width:$screen-xxl) {
+        font-size: 12px !important;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.agreeButtonGroup {
+
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 0 100px;
+  /* Adjust padding as needed */
+}
